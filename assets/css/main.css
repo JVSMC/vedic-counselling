@@ -1,0 +1,372 @@
+/* Font importation */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=ZCOOL+XiaoWei&display=swap');
+
+/* Global variables */
+:root {
+    /* Principal color */
+    --gumbo: #7D9FA6;
+    --lobloly: #B6C8CD;
+    --grayNurse: #E6EBE7;
+    --sprout: #C0D1A9;
+    --battleShipGray: #8C9E70;
+    --whiteText: white;
+    --blackText: black;
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    color: var(--whiteText);
+}
+button{
+    cursor: pointer;
+}
+
+/* Elements */
+section{
+    background-color: var(--grayNurse);
+}
+h1 {
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.social i{
+    cursor: pointer;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--sprout);
+    padding: 0px 20px;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 7px;
+    background: var(--grayNurse);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--sprout);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--battleShipGray);
+}
+
+/* Components */
+/* ---| NavBar |--- */
+nav {
+    position: fixed;
+    top: 2.69rem;
+    height: 2.8125rem;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+nav .logo {
+    height: 100%;
+    position: relative;
+    left: 2.38rem;
+}
+
+nav .navText {
+    position: fixed;
+    right: 2.38rem;
+    display: flex;
+}
+
+.navText::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 4px;
+    bottom: 0px;
+    z-index: -1;
+    background-color: var(--lobloly);
+}
+
+.navText a,
+.navText button,
+.navText p {
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 14px 16px;
+    -webkit-transition: .4s;
+    transition: 0.4s;
+}
+.changeColor a,
+.changeColor button,
+.changeColor p,
+.changeColor i{
+    color: var(--blackText);
+}
+/* Dropdown */
+/* Links inside the navbar */
+.navText a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a color background color to navbar links on hover */
+nav a:hover,
+.dropdown:hover .dropbtn {
+    /* background-color: var(--grayNurse); */
+    border-bottom: var(--blackText) solid 4px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--grayNurse);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* z-index: 1; */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: var(--blackText);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    border: none;
+    background-color: var(--lobloly);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.toggleSwitch {
+    padding: 0px 0px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2.3125rem;
+    height: 1.1875rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--grayNurse);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.changeColorSw .slider{
+    background-color: var(--battleShipGray);
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    width: .9rem;
+    height: .9rem;
+    left: 4px;
+    bottom: 2px;
+    background-color: var(--battleShipGray);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.changeColorSw .slider::before{
+    background-color: var(--grayNurse);
+}
+
+input:checked+.slider {
+    background-color: var(--battleShipGray);
+}
+.changeColorSw input:checked+.slider{
+    background-color: var(--gumbo);
+}
+
+input:focus+.slider {
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+    background-color: var(--grayNurse);
+}
+.changeColorSw input:checked+.slider:before{
+    background-color: var(--grayNurse);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/* ---| Footer |--- */
+footer {
+    display: flex;
+    align-items: center;
+    background-color: var(--grayNurse);
+    width: 100%;
+}
+.formImg{
+    background: linear-gradient(0deg, rgba(140, 158, 112, 0.70) 0%, rgba(140, 158, 112, 0.70) 100%), url(/img/background/ian-stauffer-uftqFbfWGFY-unsplash.webp), var(--gumbo) -96.438px 0px / 132.072% 100% no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formImg li{
+    font-family: ZCOOL XiaoWei;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1.5rem;
+}
+.formImg li a{
+    display: block;
+    text-indent: 1em;
+    line-height: 2em;
+}
+.footerSocial i{
+    color: var(--whiteText);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+}
+form input, 
+form textarea,
+form button{
+    margin: 1rem 0;
+    padding: 8px 16px;
+    color: var(--blackText);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+}
+form input,
+form textarea{
+    background-color: transparent;
+    border: var(--battleShipGray) 3px solid;
+}
+form button{
+    background-color: var(--sprout);
+    padding: 8px 16px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+/* Sections */
+main {
+    /* background-color: beige;  */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/balance-110850_1920.webp), var(--gumbo) 50%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.mainText {
+    margin: 0 4.31rem;
+    line-height: 4em;
+}
+
+.mainText ul li {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.mainText p {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.mainText button {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--blackText);
+    background-color: var(--lobloly);
+    padding: 8px 16px;
+    border-radius: 34px;
+}
+.mainSocial{
+    position: absolute;
+    bottom: 3.5em;
+    width: 100%;
+    text-align: center;
+}
