@@ -1,6 +1,7 @@
 <body>
     <img class="logo" src="/img/Logotipo_C.svg" alt="vedic-counselling">
     <div class = "navText">
+      <div id = "secondPart" class = "sidenav2">
         <a href="index.html">Inicio</a>
         <div class="dropdown">
             <button class="dropbtn">
@@ -12,24 +13,29 @@
               <a href="#">Empresas</a>
             </div>
         </div>
-        <a href="#footer">Contacto</a>
-        <div class="dropdown">
-            <button class="dropbtn">
-                Medios
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Blog</a>
-              <a href="#">Pódcast</a>
-            </div>
+        <div id="firstPart" class="sidenav">
+          <i id = "closeBtn"class="fa-solid fa-xmark" onclick="openNav()"></i>
+          <a href="#footer">Contacto</a>
+          <div class="dropdown">
+              <button class="dropbtn">
+                  Medios
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Blog</a>
+                <a href="#">Pódcast</a>
+              </div>
+          </div>
         </div>
-        <div class="toggleSwitch">
-            <p>Eng</p>
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-            <p>Esp</p>
-        </div>
-    </div>
+      </div>
+      <div class="toggleSwitch">
+          <p>Eng</p>
+          <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+          </label>
+          <p>Esp</p>
+      </div>
+        <i id = "sandwichMenu" class="fa-solid fa-bars" onclick="openNav()"></i>
+      </div>
 </body>
