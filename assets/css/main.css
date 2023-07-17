@@ -93,7 +93,7 @@ nav .logo {
     height: 2.5em;
     position: relative;
     left: 2.38rem;
-    margin-bottom: 14px;
+    /* margin-bottom: 14px; */
 }
 
 nav .navText {
@@ -421,10 +421,11 @@ main {
 @media (max-width: 960px) {
 
     /* --| Navbar |-- */
-    .changeColorLogo{
+    .changeColorLogo {
         filter: invert(100%);
     }
-    #sandwichMenu{
+
+    #sandwichMenu {
         display: block;
     }
 
@@ -442,37 +443,45 @@ main {
         flex-direction: column;
         align-items: start;
     }
-    .sidenav #closeBtn{
+
+    .sidenav #closeBtn {
         display: block;
         position: absolute;
         top: 20px;
         right: 25px;
     }
-    .seeSidenav{
+
+    .seeSidenav {
         width: 250px;
     }
+
     /* --| Footer |-- */
-    footer{
+    footer {
         flex-direction: column-reverse;
     }
-    footer .formImg{
+
+    footer .formImg {
         width: 100%;
         height: 30vh;
         flex-direction: column-reverse;
         justify-content: space-around;
     }
-    footer .formImg ol{
+
+    footer .formImg ol {
         display: flex;
         flex-direction: row;
     }
-    .formImg li a{
-        text-indent:0em;
+
+    .formImg li a {
+        text-indent: 0em;
         font-size: 1.2rem;
     }
-    .footerSocial i{
+
+    .footerSocial i {
         font-size: 1.7rem;
     }
-    form{
+
+    form {
         width: 80%;
         height: 70vh;
         display: flex;
@@ -487,7 +496,7 @@ main {
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .sidenav2 {
         display: flex;
         height: 100%;
@@ -503,47 +512,102 @@ main {
         flex-direction: column;
         align-items: start;
     }
-    #firstPart{
+
+    #firstPart {
         all: unset;
     }
-    .dropdown-content{
+
+    .dropdown-content {
         position: static;
         min-width: 180px;
     }
-    .seeSidenav{
+
+    .seeSidenav {
         width: 180px;
     }
 
     /*--| Sections |--*/
-    .mainText{
+    .mainText {
         line-height: 2.5em;
         margin: 0 2.31rem;
     }
-    .mainText h1{
+
+    .mainText h1 {
         font-size: 1.8rem;
     }
-    .mainText p{
+
+    .mainText p {
         font-size: 1.3rem;
     }
-    .mainText button{
+
+    .mainText button {
         font-size: 1.3rem;
     }
 
     /* --| Footer |-- */
-    footer .formImg{
+    footer .formImg {
         height: auto;
     }
-    footer .formImg ol{
+
+    footer .formImg ol {
         flex-direction: column;
     }
+
     .formImg .footerSocial {
         margin-top: 1.5rem;
         text-align: center;
     }
+
     .footerSocial i {
         margin: .7rem;
     }
-    form{
+
+    form {
         height: 90vh;
     }
+}
+
+@media (max-width: 380px) {
+
+    /*--|Navbar|--*/
+    nav {
+        padding-top: 1.5rem;
+    }
+
+    nav .logo {
+        height: 2em;
+    }
+
+    .navText a,
+    .navText button,
+    .navText p {
+        font-size: 1.3rem;
+        padding: 10px 12px;
+        -webkit-transition: .4s;
+        transition: 0.4s;
+    }
+    /*--|Sections|--*/
+
+    .mainText {
+        line-height: 2.5em;
+        margin: 0 2.31rem;
+    }
+
+    .mainText h1 {
+        font-size: 1.2rem;
+    }
+    .mainText ul li {
+        margin-left: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .mainText p {
+        font-size: 1rem;
+    }
+
+    .mainText button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
 }
