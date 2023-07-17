@@ -610,4 +610,9 @@ main {
         padding: 6px 10px;
     }
 
+    /*--|Footer|--*/
+    .footerSocial i {
+        font-size: 1.3rem;
+    }
+
 }
