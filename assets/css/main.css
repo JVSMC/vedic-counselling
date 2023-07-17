@@ -83,10 +83,12 @@ nav {
 }
 
 .navBlur {
-    background-color: #8c9e7093;
+    background-color: var(--battleShipGray);
     transition: .4s;
+    padding-bottom: 12px;
     /* backdrop-filter: blur(10px); */
 }
+
 
 nav .logo {
     /* height: 100%; */
@@ -402,7 +404,7 @@ main {
 .mainText button {
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--blackText);
     background-color: var(--lobloly);
     padding: 8px 16px;
@@ -497,6 +499,31 @@ main {
 }
 
 @media (max-width: 480px) {
+    nav{
+        padding-top: 1.5rem;
+    }
+    .navBlur2 {
+        background-color: var(--grayNurse);
+        transition: .4s;
+    }
+    nav .logo{
+        height: 2em;
+        left: 1.8rem;
+    }
+    nav .navText{
+        right: 1.8rem;
+    }
+    .navText::before{
+        width: 0;
+    }
+    .navText a,
+    .navText button,
+    .navText p {
+        font-size: 1.3rem;
+        padding: 10px 12px;
+        -webkit-transition: .4s;
+        transition: 0.4s;
+    }
     .sidenav2 {
         display: flex;
         height: 100%;
@@ -569,23 +596,6 @@ main {
 
 @media (max-width: 380px) {
 
-    /*--|Navbar|--*/
-    nav {
-        padding-top: 1.5rem;
-    }
-
-    nav .logo {
-        height: 2em;
-    }
-
-    .navText a,
-    .navText button,
-    .navText p {
-        font-size: 1.3rem;
-        padding: 10px 12px;
-        -webkit-transition: .4s;
-        transition: 0.4s;
-    }
     /*--|Sections|--*/
 
     .mainText {

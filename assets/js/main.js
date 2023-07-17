@@ -29,6 +29,7 @@ window.addEventListener('scroll', function () {
     navBar.classList.add("navBlur");
   }else if ((scrollPosition + 10) >= footerPosition) { //scrollPosition > 0 && scrollPosition < footerPosition
     navBar.classList.remove("navBlur");
+    navBar.classList.add("navBlur2");
     navLogo.classList.add("changeColorLogo");
     navText.classList.add("changeColor");
     changeLanguaje.classList.add('changeColorSw');
@@ -37,6 +38,7 @@ window.addEventListener('scroll', function () {
     navText.classList.remove("changeColor");
     navLogo.classList.remove("changeColorLogo");
     navBar.classList.remove("navBlur");
+    navBar.classList.remove("navBlur2");
     changeLanguaje.classList.remove('changeColorSw');
     // console.log('Change color to transparent');
   }
@@ -51,6 +53,19 @@ function openNav() {
   }else if (window.innerWidth < 480){
     document.getElementById("secondPart").classList.toggle('seeSidenav');
   }
+
+  const elementos = document.querySelectorAll(".navOpenBlur");
+    // Recorrer los elementos seleccionados
+    elementos.forEach(elemento => {
+        // Realizar acciones con cada elemento
+        if (elemento.style.filter === "brightness(0.7)") {
+          // Si el filtro está aplicado, quitarlo
+          elemento.style.filter = "none";
+        } else {
+          // Si el filtro no está aplicado, agregarlo
+          elemento.style.filter = "brightness(0.7)";
+        }
+    });
 
 }
 // Verificar el ancho de la pantalla cuando se cambia el tamaño de la ventana
