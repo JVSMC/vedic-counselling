@@ -582,6 +582,12 @@ main {
         font-size: 1.3rem;
     }
 
+    .mainSocial {
+        position: absolute;
+        bottom: 2.5em;
+        margin-top: 1em;
+    }
+
     /* --| Footer |-- */
     footer .formImg {
         height: auto;
@@ -615,10 +621,10 @@ main {
     }
 
     .mainText h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .mainText ul li {
-        margin-left: 1.5rem;
+        margin-left: 1.2rem;
         font-size: 1rem;
     }
 
