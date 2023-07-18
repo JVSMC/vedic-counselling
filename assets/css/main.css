@@ -565,7 +565,7 @@ main {
     .mainText {
         line-height: 2.5em;
         margin: 0 2.31rem;
-        height: 65%;
+        height: 60%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -584,8 +584,7 @@ main {
 
     .mainSocial {
         position: absolute;
-        bottom: 2.5em;
-        margin-top: 1em;
+        bottom: 1.5em;
     }
 
     /* --| Footer |-- */
