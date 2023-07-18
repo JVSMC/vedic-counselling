@@ -583,8 +583,7 @@ main {
     }
 
     .mainSocial {
-        position: absolute;
-        bottom: 1.5em;
+        bottom: 1em;
     }
 
     /* --| Footer |-- */
@@ -634,6 +633,9 @@ main {
     .mainText button {
         font-size: 1rem;
         padding: 6px 10px;
+    }
+    .mainSocial {
+        bottom: .2em;
     }
 
     /*--|Footer|--*/
