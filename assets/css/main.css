@@ -83,7 +83,7 @@ nav {
 }
 
 .navBlur {
-    background-color: var(--battleShipGray);
+    background-color: var(--gumbo);
     transition: .4s;
     padding-bottom: 12px;
     /* backdrop-filter: blur(10px); */
@@ -493,8 +493,12 @@ main {
 
     /* --| Sections |-- */
     main {
-        background-position: 85% 50%;
+        /* background-position: 85% 50%; */
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/balance-110850_1920.jpg), var(--gumbo) 50%;
+        background-size: cover;
+        background-position: center;
     }
+
 
 }
 
@@ -505,6 +509,7 @@ main {
     .navBlur2 {
         background-color: var(--grayNurse);
         transition: .4s;
+        padding-bottom: 12px;
     }
     nav .logo{
         height: 2em;
@@ -554,15 +559,21 @@ main {
     }
 
     /*--| Sections |--*/
+    main{
+        background-position: 65%;
+    }
     .mainText {
         line-height: 2.5em;
         margin: 0 2.31rem;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .mainText h1 {
         font-size: 1.8rem;
     }
-
     .mainText p {
         font-size: 1.3rem;
     }
