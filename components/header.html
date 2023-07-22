@@ -1,41 +1,47 @@
 <body>
-    <img class="logo" src="/img/Logotipo_C.svg" alt="vedic-counselling">
-    <div class = "navText">
-      <div id = "secondPart" class = "sidenav2">
-        <a href="index.html">Inicio</a>
-        <div class="dropdown">
-            <button class="dropbtn">
-                Servicios
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Personal</a>
-              <a href="#">Empresas</a>
-            </div>
+  <img class="logo" src="/img/isotipo_blanco_animated.svg" alt="vedic-counselling">
+  <div class="navText">
+    <div id="secondPart" class="sidenav2">
+      <a href="index.html" class="lang" data-key="navHome">Home</a>
+      <a href="service.html" class="lang" data-key="navService">Services</a>
+      <!-- <div class="dropdown">
+        <div class = "containerdropbtn">
+          <button class="dropbtn lang" data-key="navService">
+            Services
+          </button>
+          <i class="fa fa-caret-down"></i>
         </div>
-        <div id="firstPart" class="sidenav">
-          <i id = "closeBtn"class="fa-solid fa-xmark" onclick="openNav()"></i>
-          <a href="#footer">Contacto</a>
-          <div class="dropdown">
-              <button class="dropbtn">
-                  Medios
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Blog</a>
-                <a href="#">Pódcast</a>
-              </div>
+        <div class="dropdown-content">
+          <a href="service.html" class="lang" data-key="navServiceOp1">Personal</a>
+          <a href="#" class="lang" data-key="navServiceOp2">Companies</a>
+        </div>
+      </div> -->
+      <div id="firstPart" class="sidenav">
+        <i id="closeBtn" class="fa-solid fa-xmark" onclick="openNav()"></i>
+        <a href="#footer" class="lang" data-key="navContact">Contact</a>
+        <div class="dropdown">
+          <div class = "containerdropbtn">
+            <button class="dropbtn lang" data-key="navMedia">
+              Media
+            </button>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="dropdown-content">
+            <a href="#" class="lang" data-key="navMediaOp1">Blog</a>
+            <a href="#" class="lang" data-key="navMediaOp2">Podcast</a>
+            <a href="#" class="lang" data-key="navMediaOp3">Dosha</a>
           </div>
         </div>
       </div>
-      <div class="toggleSwitch">
-          <p>Eng</p>
-          <label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-          </label>
-          <p>Esp</p>
-      </div>
-        <i id = "sandwichMenu" class="fa-solid fa-bars" onclick="openNav()"></i>
-      </div>
+    </div>
+    <div class="toggleSwitch">
+      <p>Eng</p>
+      <label class="switch">
+        <input type="checkbox" id="chboxLan" onchange="changeLanguage()">
+        <span class="slider round"></span>
+      </label>
+      <p>Esp</p>
+    </div>
+    <i id="sandwichMenu" class="fa-solid fa-bars" onclick="openNav()"></i>
+  </div>
 </body>

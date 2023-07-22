@@ -25,13 +25,21 @@
     color: var(--whiteText);
 }
 
+/* Elements */
 button {
     cursor: pointer;
 }
 
-/* Elements */
+main,
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
 section {
     background-color: var(--grayNurse);
+    /* border-bottom: 2px solid var(--gumbo); */
 }
 
 h1 {
@@ -39,6 +47,10 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 .social i {
@@ -85,7 +97,7 @@ nav {
 .navBlur {
     background-color: var(--gumbo);
     transition: .4s;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     /* backdrop-filter: blur(10px); */
 }
 
@@ -108,24 +120,43 @@ nav .navText {
     position: absolute;
     content: "";
     width: 100%;
-    height: 3px;
-    left: 4px;
-    bottom: 0px;
+    height: 2px;
+    bottom: 3px;
     z-index: -1;
     background-color: var(--lobloly);
 }
 
 .navText a,
-.navText button,
 .navText p {
     font-size: 1.5625rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     padding: 14px 16px;
-    -webkit-transition: .4s;
-    transition: 0.4s;
+    /* -webkit-transition: .4s;
+    transition: 0.4s; */
 }
+
+.navText .containerdropbtn {
+    display: flex;
+    align-items: baseline;
+    padding: 0px 16px;
+}
+
+.navText .containerdropbtn button {
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 14px 5px 14px 0px;
+    /* -webkit-transition: .4s;
+    transition: 0.4s; */
+}
+
+.navText .containerdropbtn i {
+    font-size: 1.5625rem;
+}
+
 
 .changeColor a,
 .changeColor button,
@@ -161,9 +192,9 @@ nav .navText {
 
 /* Add a color background color to navbar links on hover */
 nav a:hover,
-.dropdown:hover .dropbtn {
+.dropdown:hover .containerdropbtn {
     /* background-color: var(--grayNurse); */
-    border-bottom: var(--blackText) solid 4px;
+    border-bottom: var(--blackText) solid 2px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -268,14 +299,14 @@ input:focus+.slider {
     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-input:checked+.slider:before {
+input:checked+.slider::before {
     -webkit-transform: translateX(15px);
     -ms-transform: translateX(15px);
     transform: translateX(15px);
     background-color: var(--grayNurse);
 }
 
-.changeColorSw input:checked+.slider:before {
+.changeColorSw input:checked+.slider::before {
     background-color: var(--grayNurse);
 }
 
@@ -284,7 +315,7 @@ input:checked+.slider:before {
     border-radius: 34px;
 }
 
-.slider.round:before {
+.slider.round::before {
     border-radius: 50%;
 }
 
@@ -373,16 +404,21 @@ form button {
 
 
 /* Sections */
-main {
+#main {
     /* background-color: beige;  */
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/balance-110850_1920.webp), var(--gumbo) 50%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/balance-110850_1920.webp);
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
 }
 
+#mainService {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/luca-bravo-O453M2Liufs-unsplash.webp);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+/*Index*/
 .mainText {
     margin: 0 4.31rem;
     line-height: 4em;
@@ -416,6 +452,319 @@ main {
     bottom: 3.5em;
     width: 100%;
     text-align: center;
+}
+
+/*Service*/
+.tab {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    padding-top: 8.5rem;
+    /* border-bottom: 2px solid var(--sprout); */
+    margin-bottom: 0.5rem;
+}
+
+.tab::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    z-index: 0;
+}
+
+.tab h2,
+.tab ul li {
+    position: relative;
+    z-index: 1;
+    font-family: ZCOOL XiaoWei;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.tab ul {
+    margin: 5.37rem auto 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab ul li {
+    font-size: 1.5625rem;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.tab ul li:hover {
+    border-bottom: 2px solid var(--sprout);
+    text-shadow: 4px 4px 5px var(--battleShipGray);
+}
+
+.tabcontent {
+    position: relative;
+    height: 55%;
+    width: 80%;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.tabcontent h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 10%;
+}
+
+.tabcontent p {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-shadow: 3px 3px 7px var(--blackText);
+}
+
+/* Our Plans*/
+#ourPlans {
+    background-color: var(--lobloly);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ourPlans h2 {
+    font-family: ZCOOL XiaoWei;
+    margin: 5rem 0 3rem 0;
+    color: var(--battleShipGray);
+}
+
+#weOffer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+    /* position: relative; */
+}
+
+#weOffer img {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    /* border-bottom: 5px solid var(--grayNurse); */
+    box-shadow: 0px 5px 5px var(--grayNurse);
+    /* -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); */
+}
+
+#weOfferI,
+#weOfferD {
+    /* width: 250px; */
+    height: 85%;
+}
+
+#weOfferD .rectOffer {
+    justify-content: flex-end;
+}
+
+.rectOffer {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    width: 20.125rem;
+    height: 5.25rem;
+    flex-shrink: 0;
+    border-radius: 6.3125rem;
+    border: 2px solid var(--battleShipGray);
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+.rectOffer i {
+    background-color: var(--grayNurse);
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0 .7rem;
+    color: var(--blackText);
+    font-size: 2rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+.rectOffer span {
+    font-size: 1.5rem;
+    color: var(--blackText);
+}
+
+#weOfferD .rectOffer span {
+    text-align: right;
+}
+
+#weOfferI .rectOffer:nth-child(1) {
+    /* transform: translate(130px); */
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+}
+
+#weOfferI .rectOffer:nth-child(2) {
+    transform: rotate(60deg) translate(100px) rotate(-60deg);
+}
+
+#weOfferI .rectOffer:nth-child(3) {
+    transform: rotate(90deg) translate(200px) rotate(-90deg);
+}
+
+#weOfferD .rectOffer:nth-child(1) {
+    transform: rotate(0deg) translate(-200px) rotate(0deg);
+}
+
+#weOfferD .rectOffer:nth-child(2) {
+    transform: rotate(-60deg) translate(-100px) rotate(60deg);
+
+}
+
+#weOfferD .rectOffer:nth-child(3) {
+    transform: rotate(270deg) translate(-200px) rotate(-270deg);
+
+}
+
+/*PricetTargets*/
+#priceTargets {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+#priceTargets h2 {
+    font-family: ZCOOL XiaoWei;
+    margin: 2rem;
+    color: var(--battleShipGray);
+    /* text-shadow: 1px 1px 3px var(--blackText); */
+}
+
+.targetContainer {
+    display: flex;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.target {
+    /* width: 30%;*/
+    height:fit-content; 
+    width: 24.63956rem;
+    /* height: 29.8125rem; */
+    margin: 0 1.67rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% 50% 0% 0%;
+    border: 2px solid var(--lobloly);
+}
+
+.target h3,
+.target p {
+    color: var(--blackText);
+    margin: 1rem;
+}
+
+.target h3 {
+    font-family: ZCOOL XiaoWei;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 3px solid var(--battleShipGray);
+    border-top: 3px solid var(--battleShipGray);
+}
+
+.target button {
+    /* background-color: var(--gumbo); */
+    background-color: transparent;
+    border: 2px solid var(--gumbo);
+    box-shadow: 0px 4px 8px 0px #c0d1a9;
+    padding: 8px 16px;
+    color: var(--blackText);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.target .containerTarget {
+    position: relative;
+    text-align: center;
+    margin: 1rem;
+}
+
+.target .containerTarget img {
+    /* width: 20%; */
+    height: 9rem;
+}
+
+.target .containerTarget i {
+    display: none;
+    color: #7d9fa643;
+    font-size: 3rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Meet Coach*/
+.meetCoach {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--gumbo);
+}
+
+.meetCoach .left,
+.meetCoach .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 34.125rem;
+    margin: 0 2.5rem;
+}
+
+.meetCoach .right img {
+    width: 35.5rem;
+    height: 34.125rem;
+    border-radius: 15.46875rem 0rem;
+    border: 3px solid var(--grayNurse);
+    background: linear-gradient(0deg, rgba(192, 209, 169, 0.30) 0%, rgba(192, 209, 169, 0.30) 100%);
+}
+
+.meetCoach .left p,
+.meetCoach .left iframe,
+.meetCoach .left img{
+    margin: 2rem 0;
+}
+
+.meetCoach .left h2{
+    font-family: ZCOOL XiaoWei;
+    color: var(--grayNurse);
+}
+
+.meetCoach .left p {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--blackText);
+}
+
+.meetCoach .left img{
+    width: 60%;
 }
 
 /* General mediaqueries */
@@ -492,35 +841,130 @@ main {
     }
 
     /* --| Sections |-- */
-    main {
+    #main {
         /* background-position: 85% 50%; */
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/balance-110850_1920.jpg), var(--gumbo) 50%;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/balance-110850_1920_16_9.webp);
         background-size: cover;
         background-position: center;
     }
 
+    .tab::before{
+        background: rgba(5, 5, 5, 0.05);
+    }
 
+    .tab ul {
+        width: 80%;
+    }
+
+    #ourPlans{
+        height: auto;
+    }
+
+    #weOffer {
+        flex-direction: column;
+    }
+    #weOffer img{
+        order: 1;
+        margin: 2rem auto;
+    }
+    #weOffer #weOfferI,
+    #weOffer #weOfferD{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #weOffer #weOfferI{
+        order: 2;
+    }
+    #weOffer #weOfferD{
+        order: 3;
+        margin-bottom: 2rem;
+    }
+    .rectOffer {
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+    #weOfferD .rectOffer {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+    #weOfferI .rectOffer:nth-child(1),
+    #weOfferI .rectOffer:nth-child(2),
+    #weOfferI .rectOffer:nth-child(3),
+    #weOfferD .rectOffer:nth-child(1),
+    #weOfferD .rectOffer:nth-child(2),
+    #weOfferD .rectOffer:nth-child(3){
+        transform: rotate(0deg) translate(0px);
+    }
+    #weOfferD .rectOffer span{
+        text-align: left;
+    }
+
+    #priceTargets {
+        height: auto;
+    }
+
+    #priceTargets h2 {
+        margin: 4rem auto 2rem auto;
+    }
+
+    .targetContainer {
+        height: 100%;
+        flex-direction: column;
+    }
+    .target{
+        margin: 1.67rem auto;
+    }
+    .meetCoach {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .meetCoach .left {
+        width: 80%;
+        height: auto;
+        margin: 4rem auto 0 auto;
+    }
+    .meetCoach .left h2{
+        margin-bottom: 1.5rem;
+    }
+    .meetCoach .left p, 
+    .meetCoach .left iframe, 
+    .meetCoach .left img {
+        margin: 1.5rem 0;
+    }
+    .meetCoach .right {
+        width: 80%;
+        height: auto;
+        margin: 3rem;
+    }
 }
 
 @media (max-width: 480px) {
-    nav{
+    nav {
         padding-top: 1.5rem;
     }
+
     .navBlur2 {
         background-color: var(--grayNurse);
         transition: .4s;
         padding-bottom: 12px;
     }
-    nav .logo{
+
+    nav .logo {
         height: 2em;
         left: 1.8rem;
     }
-    nav .navText{
+
+    nav .navText {
         right: 1.8rem;
     }
-    .navText::before{
+
+    .navText::before {
         width: 0;
     }
+
     .navText a,
     .navText button,
     .navText p {
@@ -529,6 +973,15 @@ main {
         -webkit-transition: .4s;
         transition: 0.4s;
     }
+    .navText .containerdropbtn {
+        display: flex;
+        align-items: baseline;
+        padding: 0px 12px;
+    }
+    .navText .containerdropbtn button {
+        font-size: 1.3rem;
+    }
+
     .sidenav2 {
         display: flex;
         height: 100%;
@@ -559,9 +1012,10 @@ main {
     }
 
     /*--| Sections |--*/
-    main{
+    #main {
         background-position: 65%;
     }
+
     .mainText {
         line-height: 2.5em;
         margin: 0 2.31rem;
@@ -574,6 +1028,7 @@ main {
     .mainText h1 {
         font-size: 1.8rem;
     }
+
     .mainText p {
         font-size: 1.3rem;
     }
@@ -607,7 +1062,49 @@ main {
     form {
         height: 90vh;
     }
-}
+
+    .tab ul{
+        margin: 1.5rem auto 0 auto;
+        flex-direction: column;
+    }
+
+    #weOffer img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .rectOffer span {
+        font-size: 1.2rem;
+    }
+
+    .target {
+        width: 80%;
+        border-radius: 2rem;
+    }
+    .target .containerTarget {
+        margin: 0.2rem;
+    }
+    .target .containerTarget img {
+        height: 6rem;
+    }
+
+    .meetCoach .left h2 {
+        text-align: center;
+    }
+    .meetCoach .left p {
+        text-align: justify;
+    }
+
+    .meetCoach .right {
+        height: auto;
+        margin: 2rem;
+    }
+    .meetCoach .right img {
+        /* transform: scale(.6); */
+        width: 21.3rem;
+        height: 20.475rem;
+        border-radius: 9.28125rem 0;
+    }
 
 @media (max-width: 380px) {
 
@@ -621,6 +1118,7 @@ main {
     .mainText h1 {
         font-size: 1.5rem;
     }
+
     .mainText ul li {
         margin-left: 1.2rem;
         font-size: 1rem;
@@ -634,6 +1132,7 @@ main {
         font-size: 1rem;
         padding: 6px 10px;
     }
+
     .mainSocial {
         bottom: .2em;
     }

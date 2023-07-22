@@ -68,5 +68,3 @@ function openNav() {
     });
 
 }
-// Verificar el ancho de la pantalla cuando se cambia el tamaño de la ventana
-//window.addEventListener('resize', openNav);

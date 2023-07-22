@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rectángulos en Forma Circular</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 500px;
+    }
+
+    .rect {
+      position: absolute;
+      width: 30px;
+      /* Ajusta el radio del círculo */
+      height: 30px;
+      /* Ajusta el radio del círculo */
+      background-color: #f0f0f0;
+      transform: rotate(0deg);
+      transform-origin: center;
+    }
+
+    .rect:nth-child(1) {
+      transform: rotate(0deg) translate(250px) rotate(0deg);
+      background-color: red;
+    }
+
+    .rect:nth-child(2) {
+      transform: rotate(60deg) translate(250px) rotate(-60deg);
+      background-color: red;
+    }
+
+    .rect:nth-child(3) {
+      transform: rotate(120deg) translate(250px) rotate(-120deg);
+      background-color: red;
+    }
+
+    .rect:nth-child(4) {
+      transform: rotate(180deg) translate(250px) rotate(-180deg);
+            background-color: blue;
+    }
+
+    .rect:nth-child(5) {
+      transform: rotate(240deg) translate(250px) rotate(-240deg);
+      background-color: blue;
+    }
+
+    .rect:nth-child(6) {
+      transform: rotate(300deg) translate(250px) rotate(-300deg);
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+    <div class="rect"></div>
+  </div>
+</body>
+
+</html>
