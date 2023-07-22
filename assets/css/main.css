@@ -1105,8 +1105,12 @@ form button {
         height: 20.475rem;
         border-radius: 9.28125rem 0;
     }
+}
 
 @media (max-width: 380px) {
+    h2 {
+        font-size: 2.2rem;
+    }
 
     /*--|Sections|--*/
 
@@ -1140,6 +1144,26 @@ form button {
     /*--|Footer|--*/
     .footerSocial i {
         font-size: 1.3rem;
+    }
+
+    .tab{
+        height: 55%;
+    }
+
+    .tabcontent {
+        height: auto;
+        width: 90%
+    }
+
+    #weOffer img {
+        height: 16rem;
+        width: 16rem;
+    }
+
+    .meetCoach .right img {
+        width: 17.75rem;
+        height: 17.0625rem;
+        border-radius: 7.7343rem 0;
     }
 
 }
