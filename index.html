@@ -25,15 +25,16 @@
     <meta property="twitter:image" content="https://vedic-counselling.netlify.app/img/Logotipo_C.png" />
 
     <!-- Imports -->
-    <link rel="stylesheet" href="assets/css/main.css?v=1.4" />
+    <link rel="stylesheet" href="assets/css/main.css?v=1.5" />
     <script src="https://kit.fontawesome.com/e0604ff0b7.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <!-- Navbar -->
     <nav id = "header" class="navbar"></nav>
     <main id = "main" class = "navOpenBlur">
-        <div class = "mainText">
+        <div class = "mainText" data-aos="fade-right">
             <h1>Do you ever ask yourself,</h1>
             <ul>
                 <li>“Who am I?”, “Why am I here?”, “Am I on track?</li>
@@ -46,7 +47,7 @@
             </p>
             <p>
                 If so, I can
-                <button>help</button>
+                <button onclick="redireccionar('service.html')">help</button>
             </p>
         </div>
         <div class = "mainSocial social">
@@ -55,9 +56,18 @@
             <i class="fa-brands fa-spotify"></i>
         </div>
     </main>
-    <footer id = "footer" class="change-color navOpenBlur"></footer>
+    <footer id = "footer" class="change-color navOpenBlur" data-aos="zoom-in-up"></footer>
     <!-- Javascript -->
     <script src = "assets/js/main.js"></script>
     <script src="assets/js/changeLanguage.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1000,
+                offset: 120
+            }
+        );
+      </script>
 </body>
 </html>

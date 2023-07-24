@@ -25,6 +25,15 @@
     color: var(--whiteText);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: clip;
+    background-color: var(--grayNurse);
+}
+
 /* Elements */
 button {
     cursor: pointer;
@@ -458,7 +467,7 @@ form button {
 .tab {
     position: relative;
     width: 100%;
-    height: 45%;
+    height: 55%;
     padding-top: 8.5rem;
     /* border-bottom: 2px solid var(--sprout); */
     margin-bottom: 0.5rem;
@@ -479,6 +488,7 @@ form button {
 }
 
 .tab h2,
+.tab p,
 .tab ul li {
     position: relative;
     z-index: 1;
@@ -489,8 +499,15 @@ form button {
     text-align: center;
 }
 
+.tab p{
+    width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
 .tab ul {
-    margin: 5.37rem auto 0 auto;
+    margin: 4.37rem auto 0 auto;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -655,7 +672,7 @@ form button {
 
 .target {
     /* width: 30%;*/
-    height:fit-content; 
+    height: fit-content;
     width: 24.63956rem;
     /* height: 29.8125rem; */
     margin: 0 1.67rem;
@@ -682,7 +699,8 @@ form button {
     border-top: 3px solid var(--battleShipGray);
 }
 
-.target button {
+.target button,
+.layout button {
     /* background-color: var(--gumbo); */
     background-color: transparent;
     border: 2px solid var(--gumbo);
@@ -747,11 +765,11 @@ form button {
 
 .meetCoach .left p,
 .meetCoach .left iframe,
-.meetCoach .left img{
+.meetCoach .left img {
     margin: 2rem 0;
 }
 
-.meetCoach .left h2{
+.meetCoach .left h2 {
     font-family: ZCOOL XiaoWei;
     color: var(--grayNurse);
 }
@@ -763,9 +781,97 @@ form button {
     color: var(--blackText);
 }
 
-.meetCoach .left img{
+.meetCoach .left img {
     width: 60%;
 }
+
+/*--| Blog |--*/
+#mainBlog {
+    justify-content: center;
+    /* background-color: var(--lobloly); */
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(/img/background/piedras-playa-atardecer-fondo.webp); */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/balance-110850_1920.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.layout {
+    background: none;
+    width: 80%;
+    height: 80%;
+    margin-top: 4rem;
+    display: grid;
+    grid:
+        "relevantPost relevantPost relevantPost relevantPost secondPost secondPost thirdPost thirdPost" 1fr "relevantPost relevantPost relevantPost relevantPost secondPost secondPost thirdPost thirdPost" 1fr "fourthPost fourthPost fifthPost fifthPost secondPost secondPost thirdPost thirdPost" 1fr "fourthPost fourthPost fifthPost fifthPost sixthPost sixthPost sixthPost sixthPost" 1fr "fourthPost fourthPost fifthPost fifthPost sixthPost sixthPost sixthPost sixthPost" 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.layout div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* border: 2px solid black; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.layout div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 0;
+    border-radius: 1rem;
+}
+
+.layout p,
+.layout h2,
+.layout button {
+    position: relative;
+    color: var(--grayNurse);
+}
+
+.layout .keywords {
+    font-size: .7rem;
+}
+
+.layout button {
+    position: absolute;
+    bottom: 1rem;
+    /* border: 2px solid var(--grayNurse); */
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.relevantPost {
+    grid-area: relevantPost;
+}
+
+.secondPost {
+    grid-area: secondPost;
+}
+
+.thirdPost {
+    grid-area: thirdPost;
+}
+
+.fourthPost {
+    grid-area: fourthPost;
+}
+
+.fifthPost {
+    grid-area: fifthPost;
+}
+
+.sixthPost {
+    grid-area: sixthPost;
+}
+
 
 /* General mediaqueries */
 
@@ -848,7 +954,7 @@ form button {
         background-position: center;
     }
 
-    .tab::before{
+    .tab::before {
         background: rgba(5, 5, 5, 0.05);
     }
 
@@ -856,49 +962,57 @@ form button {
         width: 80%;
     }
 
-    #ourPlans{
+    #ourPlans {
         height: auto;
     }
 
     #weOffer {
         flex-direction: column;
     }
-    #weOffer img{
+
+    #weOffer img {
         order: 1;
         margin: 2rem auto;
     }
+
     #weOffer #weOfferI,
-    #weOffer #weOfferD{
+    #weOffer #weOfferD {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    #weOffer #weOfferI{
+
+    #weOffer #weOfferI {
         order: 2;
     }
-    #weOffer #weOfferD{
+
+    #weOffer #weOfferD {
         order: 3;
         margin-bottom: 2rem;
     }
+
     .rectOffer {
         width: 80%;
         margin-top: 1.5rem;
     }
+
     #weOfferD .rectOffer {
         justify-content: flex-end;
         flex-direction: row-reverse;
     }
+
     #weOfferI .rectOffer:nth-child(1),
     #weOfferI .rectOffer:nth-child(2),
     #weOfferI .rectOffer:nth-child(3),
     #weOfferD .rectOffer:nth-child(1),
     #weOfferD .rectOffer:nth-child(2),
-    #weOfferD .rectOffer:nth-child(3){
+    #weOfferD .rectOffer:nth-child(3) {
         transform: rotate(0deg) translate(0px);
     }
-    #weOfferD .rectOffer span{
+
+    #weOfferD .rectOffer span {
         text-align: left;
     }
 
@@ -914,30 +1028,44 @@ form button {
         height: 100%;
         flex-direction: column;
     }
-    .target{
+
+    .target {
         margin: 1.67rem auto;
     }
+
     .meetCoach {
         flex-direction: column;
         height: fit-content;
     }
+
     .meetCoach .left {
         width: 80%;
         height: auto;
         margin: 4rem auto 0 auto;
     }
-    .meetCoach .left h2{
+
+    .meetCoach .left h2 {
         margin-bottom: 1.5rem;
     }
-    .meetCoach .left p, 
-    .meetCoach .left iframe, 
+
+    .meetCoach .left p,
+    .meetCoach .left iframe,
     .meetCoach .left img {
         margin: 1.5rem 0;
     }
+
     .meetCoach .right {
         width: 80%;
         height: auto;
         margin: 3rem;
+    }
+
+    /*--| Blog |--*/
+    .layout {
+        display: grid;
+        grid:
+            "relevantPost relevantPost relevantPost secondPost secondPost secondPost" 1fr "relevantPost relevantPost relevantPost thirdPost thirdPost thirdPost" 1fr "fourthPost fourthPost fourthPost sixthPost sixthPost sixthPost" 1fr "fifthPost fifthPost fifthPost sixthPost sixthPost sixthPost" 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 8px;
     }
 }
 
@@ -973,11 +1101,13 @@ form button {
         -webkit-transition: .4s;
         transition: 0.4s;
     }
+
     .navText .containerdropbtn {
         display: flex;
         align-items: baseline;
         padding: 0px 12px;
     }
+
     .navText .containerdropbtn button {
         font-size: 1.3rem;
     }
@@ -1063,7 +1193,7 @@ form button {
         height: 90vh;
     }
 
-    .tab ul{
+    .tab ul {
         margin: 1.5rem auto 0 auto;
         flex-direction: column;
     }
@@ -1081,9 +1211,11 @@ form button {
         width: 80%;
         border-radius: 2rem;
     }
+
     .target .containerTarget {
         margin: 0.2rem;
     }
+
     .target .containerTarget img {
         height: 6rem;
     }
@@ -1091,6 +1223,7 @@ form button {
     .meetCoach .left h2 {
         text-align: center;
     }
+
     .meetCoach .left p {
         text-align: justify;
     }
@@ -1099,11 +1232,35 @@ form button {
         height: auto;
         margin: 2rem;
     }
+
     .meetCoach .right img {
         /* transform: scale(.6); */
         width: 21.3rem;
         height: 20.475rem;
         border-radius: 9.28125rem 0;
+    }
+
+    /*--| Blog |--*/
+    #mainBlog {
+        height: auto;
+    }
+
+    .layout {
+        height: fit-content;
+        margin: 4.5rem 0;
+        display: grid;
+        grid:
+            "relevantPost" 1fr "secondPost" 1fr "thirdPost" 1fr "fourthPost" 1fr "fifthPost" 1fr "sixthPost" 1fr / 1fr;
+        gap: 8px;
+    }
+    .layout p,
+    .layout button{
+        margin: 0.5rem 0;
+    }
+
+    .layout button {
+        position: relative;
+        bottom: 0px;
     }
 }
 
@@ -1146,7 +1303,7 @@ form button {
         font-size: 1.3rem;
     }
 
-    .tab{
+    .tab {
         height: 55%;
     }
 

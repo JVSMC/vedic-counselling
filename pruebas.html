@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Rectángulos en Forma Circular</title>
+  <title>Tarjetas y Modal</title>
   <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    body, html {
+      height: 100%;
       margin: 0;
+      padding: 0;
     }
 
     .container {
       display: flex;
+    }
+
+    .card {
+      width: 200px;
+      height: 200px;
+      margin: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .large {
+      height: 410px;
+      background-color: #FCC;
+    }
+
+    .small {
+      background-color: #CFC;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
       justify-content: center;
       align-items: center;
-      width: 500px;
-      height: 500px;
     }
 
-    .rect {
-      position: absolute;
-      width: 30px;
-      /* Ajusta el radio del círculo */
-      height: 30px;
-      /* Ajusta el radio del círculo */
-      background-color: #f0f0f0;
-      transform: rotate(0deg);
-      transform-origin: center;
-    }
-
-    .rect:nth-child(1) {
-      transform: rotate(0deg) translate(250px) rotate(0deg);
-      background-color: red;
-    }
-
-    .rect:nth-child(2) {
-      transform: rotate(60deg) translate(250px) rotate(-60deg);
-      background-color: red;
-    }
-
-    .rect:nth-child(3) {
-      transform: rotate(120deg) translate(250px) rotate(-120deg);
-      background-color: red;
-    }
-
-    .rect:nth-child(4) {
-      transform: rotate(180deg) translate(250px) rotate(-180deg);
-            background-color: blue;
-    }
-
-    .rect:nth-child(5) {
-      transform: rotate(240deg) translate(250px) rotate(-240deg);
-      background-color: blue;
-    }
-
-    .rect:nth-child(6) {
-      transform: rotate(300deg) translate(250px) rotate(-300deg);
-      background-color: red;
+    .modal-content {
+      width: 400px;
+      height: 400px;
+      background-color: #CCF;
+      padding: 20px;
     }
   </style>
 </head>
-
 <body>
   <div class="container">
-    <div class="rect"></div>
-    <div class="rect"></div>
-    <div class="rect"></div>
-    <div class="rect"></div>
-    <div class="rect"></div>
-    <div class="rect"></div>
+    <div class="card large" onclick="toggleModal(this)">
+      <h2>Tarjeta Grande</h2>
+      <p>Contenido de la tarjeta grande.</p>
+    </div>
+    <div class="card small" onclick="toggleModal(this)">
+      <h2>Tarjeta Pequeña 1</h2>
+      <p>Contenido de la tarjeta pequeña 1.</p>
+    </div>
+    <div class="card small" onclick="toggleModal(this)">
+      <h2>Tarjeta Pequeña 2</h2>
+      <p>Contenido de la tarjeta pequeña 2.</p>
+    </div>
   </div>
-</body>
 
+  <div class="modal" onclick="toggleModal()">
+    <div class="modal-content">
+      <h2>Modal</h2>
+      <p>Contenido del modal.</p>
+    </div>
+  </div>
+  <script>
+    function toggleModal(card) {
+      var modal = document.querySelector('.modal');
+      var modalContent = document.querySelector('.modal-content');
+
+      if (card) {
+        modalContent.innerHTML = card.innerHTML;
+        modal.style.display = 'flex';
+      } else {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+</body>
 </html>

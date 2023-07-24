@@ -1,7 +1,7 @@
 <svg id="Capa_6" data-name="Capa 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.77 392.34" style=""><defs>
 <style>
     .cls-1{
-            fill:none;stroke:#8C9E70; /*#1d1d1b*/
+            fill:none;stroke:#000; /*#1d1d1b / #8C9E70*/
             stroke-linecap:round;
             stroke-linejoin:round;
             stroke-width:4px;
