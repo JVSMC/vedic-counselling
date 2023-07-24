@@ -499,7 +499,7 @@ form button {
     text-align: center;
 }
 
-.tab p{
+.tab p {
     width: 80%;
     font-size: 1.1rem;
     text-align: center;
@@ -556,6 +556,7 @@ form button {
 }
 
 #ourPlans h2 {
+    text-align: center;
     font-family: ZCOOL XiaoWei;
     margin: 5rem 0 3rem 0;
     color: var(--battleShipGray);
@@ -658,6 +659,7 @@ form button {
 }
 
 #priceTargets h2 {
+    text-align: center;
     font-family: ZCOOL XiaoWei;
     margin: 2rem;
     color: var(--battleShipGray);
@@ -1021,7 +1023,8 @@ form button {
     }
 
     #priceTargets h2 {
-        margin: 4rem auto 2rem auto;
+        margin: 4rem 1rem 2rem 1rem;
+        text-align: center;
     }
 
     .targetContainer {
@@ -1193,6 +1196,10 @@ form button {
         height: 90vh;
     }
 
+    .tab p {
+        display: none;
+    }
+
     .tab ul {
         margin: 1.5rem auto 0 auto;
         flex-direction: column;
@@ -1253,8 +1260,9 @@ form button {
             "relevantPost" 1fr "secondPost" 1fr "thirdPost" 1fr "fourthPost" 1fr "fifthPost" 1fr "sixthPost" 1fr / 1fr;
         gap: 8px;
     }
+
     .layout p,
-    .layout button{
+    .layout button {
         margin: 0.5rem 0;
     }
 
