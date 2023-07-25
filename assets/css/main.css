@@ -427,6 +427,11 @@ form button {
     flex-direction: column;
 }
 
+#mainPodcast {
+    background: var(--sprout);
+    justify-content: flex-end;
+}
+
 /*Index*/
 .mainText {
     margin: 0 4.31rem;
@@ -598,7 +603,7 @@ form button {
     height: 5.25rem;
     flex-shrink: 0;
     border-radius: 6.3125rem;
-    border: 2px solid var(--battleShipGray);
+    /* border: 2px solid var(--battleShipGray); */
     transform: rotate(0deg);
     transform-origin: center;
 }
@@ -608,7 +613,7 @@ form button {
     border-radius: 50%;
     padding: 1rem;
     margin: 0 .7rem;
-    color: var(--blackText);
+    color: var(--lobloly);
     font-size: 2rem;
     font-style: normal;
     line-height: normal;
@@ -874,6 +879,38 @@ form button {
     grid-area: sixthPost;
 }
 
+/*--| Podcast |--*/
+#mainPodcast img {
+    height: 100%;
+}
+
+#mainPodcast .descriptionPodcast{
+    margin: auto 3rem;
+    width: 50%;
+}
+
+.descriptionPodcast h2{
+    font-size: 4rem;
+}
+
+.descriptionPodcast span{
+    font-size: 3.2rem;
+    color: var(--gumbo);
+}
+
+.descriptionPodcast p{
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    color: var(--blackText);
+    text-align: justify;
+}
+
+.descriptionPodcast .podcast{
+    font-size: 2rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* General mediaqueries */
 
@@ -1070,6 +1107,16 @@ form button {
             "relevantPost relevantPost relevantPost secondPost secondPost secondPost" 1fr "relevantPost relevantPost relevantPost thirdPost thirdPost thirdPost" 1fr "fourthPost fourthPost fourthPost sixthPost sixthPost sixthPost" 1fr "fifthPost fifthPost fifthPost sixthPost sixthPost sixthPost" 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 8px;
     }
+
+    /*--|Podcast|--*/
+    #mainPodcast {
+        flex-direction: column;
+        height: auto;
+    }
+    #mainPodcast .descriptionPodcast {
+        margin: 8rem 1rem 0rem 1rem;
+        width: 80%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1147,11 +1194,13 @@ form button {
     /*--| Sections |--*/
     #main {
         background-position: 65%;
+        height: auto;
+        flex-direction: column;
     }
 
     .mainText {
         line-height: 2.5em;
-        margin: 0 2.31rem;
+        margin: 5rem 2.31rem 1rem 2.31rem;
         height: 60%;
         display: flex;
         flex-direction: column;
@@ -1171,7 +1220,8 @@ form button {
     }
 
     .mainSocial {
-        bottom: 1em;
+        position: inherit;
+        margin: 2rem;
     }
 
     /* --| Footer |-- */
@@ -1270,6 +1320,18 @@ form button {
         position: relative;
         bottom: 0px;
     }
+
+    .descriptionPodcast h2{
+        font-size: 3rem;
+    }
+    
+    .descriptionPodcast span{
+        font-size: 2.2rem;
+    }
+
+    .descriptionPodcast .podcast{
+        width: 100%;
+    }
 }
 
 @media (max-width: 380px) {
@@ -1281,7 +1343,7 @@ form button {
 
     .mainText {
         line-height: 2.5em;
-        margin: 0 2.31rem;
+        /* margin: 0 2.31rem; */
     }
 
     .mainText h1 {
@@ -1303,7 +1365,8 @@ form button {
     }
 
     .mainSocial {
-        bottom: .2em;
+        position: inherit;
+        margin: 1rem;
     }
 
     /*--|Footer|--*/
