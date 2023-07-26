@@ -11,6 +11,8 @@
     --battleShipGray: #8C9E70;
     --whiteText: white;
     --blackText: black;
+    --svgbackground: #92E3A9;
+    --svgBackground2: #C1D4D9;
 }
 
 /* General */
@@ -70,6 +72,36 @@ h2 {
     line-height: normal;
     color: var(--sprout);
     padding: 0px 20px;
+}
+
+/*InfoOffer*/
+.rectOffer {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    width: 20.125rem;
+    height: 5.25rem;
+    flex-shrink: 0;
+    border-radius: 6.3125rem;
+    border: 2px solid var(--battleShipGray);
+    transform: rotate(0deg);
+    transform-origin: center;
+    cursor: pointer;
+}
+.rectOffer i {
+    /* background-color: var(--grayNurse); */
+    /* border-radius: 50%; */
+    padding: 1rem;
+    margin: 0 .7rem;
+    color: var(--lobloly);
+    font-size: 2rem;
+    font-style: normal;
+    line-height: normal;
+}
+
+.rectOffer span {
+    font-size: 1.5rem;
+    color: var(--blackText);
 }
 
 /* Scrollbar */
@@ -552,7 +584,25 @@ form button {
 }
 
 /* Our Plans*/
-#ourPlans {
+#companiesService{
+    background-color: var(--lobloly);
+}
+#companiesService img{
+    margin: 3rem 1.5rem 0 1.5rem;
+}
+#companiesService .informativeService button{
+        background-color: transparent;
+        border: 2px solid var(--gumbo);
+        padding: 8px 16px;
+        color: var(--blackText);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 15px;
+        margin-bottom: 1rem;
+}
+.wellnessPrograms {
     background-color: var(--lobloly);
     display: flex;
     flex-direction: column;
@@ -560,7 +610,7 @@ form button {
     align-items: center;
 }
 
-#ourPlans h2 {
+.wellnessPrograms h2 {
     text-align: center;
     font-family: ZCOOL XiaoWei;
     margin: 5rem 0 3rem 0;
@@ -595,33 +645,9 @@ form button {
     justify-content: flex-end;
 }
 
-.rectOffer {
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    width: 20.125rem;
-    height: 5.25rem;
-    flex-shrink: 0;
-    border-radius: 6.3125rem;
-    /* border: 2px solid var(--battleShipGray); */
-    transform: rotate(0deg);
-    transform-origin: center;
-}
-
-.rectOffer i {
-    background-color: var(--grayNurse);
-    border-radius: 50%;
-    padding: 1rem;
-    margin: 0 .7rem;
-    color: var(--lobloly);
-    font-size: 2rem;
-    font-style: normal;
-    line-height: normal;
-}
-
-.rectOffer span {
-    font-size: 1.5rem;
-    color: var(--blackText);
+#weOfferD .rectOffer i,
+#weOfferI .rectOffer i{
+    color: var(--grayNurse);
 }
 
 #weOfferD .rectOffer span {
@@ -656,14 +682,14 @@ form button {
 }
 
 /*PricetTargets*/
-#priceTargets {
+#personalService {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* position: relative; */
 }
 
-#priceTargets h2 {
+#personalService h2 {
     text-align: center;
     font-family: ZCOOL XiaoWei;
     margin: 2rem;
@@ -742,6 +768,99 @@ form button {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*--|Ayurbeda|--*/
+.infoPlans {
+    /* background: var(--sprout); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoPlans img {
+    height: 80%;
+    margin: 0 1.5rem;
+}
+
+.informativeService {
+    width: 50%;
+    margin: 0 1.5rem;
+}
+
+.informativeService h2 {
+    /* font-size: 4rem; */
+    font-family: ZCOOL XiaoWei;
+    color: var(--battleShipGray);
+}
+
+.informativeService p {
+    margin: 1rem 0;
+    text-align: justify;
+    color: var(--blackText);
+}
+
+.informativeService .informativeContainer {
+    display: flex;
+}
+
+.informativeService .rectOffer,
+.informativeService .informativeContainer .rectOffer {
+    margin: 1rem;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--battleShipGray);
+    padding: 20px;
+    max-width: 40%;
+    border-radius: 1rem;
+    text-align: center;
+    animation: showModal 0.4s ease-out;
+}
+
+@keyframes showModal {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+        /* Tamaño inicial más pequeño */
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        /* Tamaño final completo */
+    }
+}
+
+.modal-content i,
+.modal-content h3,
+.modal-content p {
+    margin: .7rem 0;
+}
+.modal-content i{
+    font-size: 2rem;
+}
+.modal-content p{
+    text-align: justify;
+}
+.close {
+    float: right;
+    cursor: pointer;
+}
+
 
 /*Meet Coach*/
 .meetCoach {
@@ -884,28 +1003,28 @@ form button {
     height: 100%;
 }
 
-#mainPodcast .descriptionPodcast{
+#mainPodcast .descriptionPodcast {
     margin: auto 3rem;
     width: 50%;
 }
 
-.descriptionPodcast h2{
+.descriptionPodcast h2 {
     font-size: 4rem;
 }
 
-.descriptionPodcast span{
+/* .descriptionPodcast span{
     font-size: 3.2rem;
     color: var(--gumbo);
-}
+} */
 
-.descriptionPodcast p{
+.descriptionPodcast p {
     margin: 1rem auto;
     font-size: 1.2rem;
     color: var(--blackText);
     text-align: justify;
 }
 
-.descriptionPodcast .podcast{
+.descriptionPodcast .podcast {
     font-size: 2rem;
     width: 30%;
     display: flex;
@@ -1001,7 +1120,7 @@ form button {
         width: 80%;
     }
 
-    #ourPlans {
+    .wellnessPrograms {
         height: auto;
     }
 
@@ -1055,11 +1174,11 @@ form button {
         text-align: left;
     }
 
-    #priceTargets {
+    #personalService {
         height: auto;
     }
 
-    #priceTargets h2 {
+    #personalService h2 {
         margin: 4rem 1rem 2rem 1rem;
         text-align: center;
     }
@@ -1113,6 +1232,7 @@ form button {
         flex-direction: column;
         height: auto;
     }
+
     #mainPodcast .descriptionPodcast {
         margin: 8rem 1rem 0rem 1rem;
         width: 80%;
@@ -1321,15 +1441,15 @@ form button {
         bottom: 0px;
     }
 
-    .descriptionPodcast h2{
+    .descriptionPodcast h2 {
         font-size: 3rem;
     }
-    
-    .descriptionPodcast span{
-        font-size: 2.2rem;
-    }
 
-    .descriptionPodcast .podcast{
+    /* .descriptionPodcast span{
+        font-size: 2.2rem;
+    } */
+
+    .descriptionPodcast .podcast {
         width: 100%;
     }
 }

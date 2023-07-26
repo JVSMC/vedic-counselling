@@ -3,8 +3,8 @@
   <div class="navText">
     <div id="secondPart" class="sidenav2">
       <a href="index.html" class="lang" data-key="navHome">Home</a>
-      <a href="service.html" class="lang" data-key="navService">Services</a>
-      <!-- <div class="dropdown">
+      <!-- <a href="service.html" class="lang" data-key="navService">Services</a> -->
+      <div class="dropdown">
         <div class = "containerdropbtn">
           <button class="dropbtn lang" data-key="navService">
             Services
@@ -12,10 +12,11 @@
           <i class="fa fa-caret-down"></i>
         </div>
         <div class="dropdown-content">
-          <a href="service.html" class="lang" data-key="navServiceOp1">Personal</a>
-          <a href="#" class="lang" data-key="navServiceOp2">Companies</a>
+          <a href="service.html" class="lang" data-key="navServiceOp1">Our approach</a>
+          <a href="service.html#personalService" class="lang" data-key="navServiceOp1">Personal</a>
+          <a href="service.html#companiesService" class="lang" data-key="navServiceOp2">Companies</a>
         </div>
-      </div> -->
+      </div>
       <div id="firstPart" class="sidenav">
         <i id="closeBtn" class="fa-solid fa-xmark" onclick="openNav()"></i>
         <a href="#footer" class="lang" data-key="navContact">Contact</a>
@@ -29,7 +30,7 @@
           <div class="dropdown-content">
             <a href="blog.html" class="lang" data-key="navMediaOp1">Blog</a>
             <a href="podcast.html" class="lang" data-key="navMediaOp2">Podcast</a>
-            <a class="lang" data-key="navMediaOp3" onclick="downloadFiles()">Dosha<i class="fa-solid fa-download" style="color: black; margin-left: 1rem;"></i></a>
+            <a class="lang" data-key="navMediaOp3" onclick="downloadFiles()" style="cursor: pointer;">Dosha<i class="fa-solid fa-download" style="color: black; margin-left: 1rem;"></i></a>
           </div>
         </div>
       </div>

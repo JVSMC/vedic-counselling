@@ -32,117 +32,177 @@
     <link rel="stylesheet" href="assets/css/main.css?v=1.6" />
     <script src="https://kit.fontawesome.com/e0604ff0b7.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
     <!-- Navbar -->
     <nav id="header" class="navbar"></nav>
     <main id="mainService" class="navOpenBlur">
-        <div class="tab" data-aos="zoom-in-down">
-            <h2>OUT APPROACH</h2>
+        <div class="tab">
+            <h2>OUR APPROACH</h2>
             <p>
-                Vedic counseling may relate to any of the four main goals of life or to wellness as the 
-                foundation. It includes not only therapeutic approaches but more general life-guidance on all 
+                Vedic counseling may relate to any of the four main goals of life or to wellness as the
+                foundation. It includes not only therapeutic approaches but more general life-guidance on all
                 levels. This makes it useful for everyone for improving their lives and managing their karma.
             </p>
-            <ul >
+            <ul data-aos="zoom-in-down">
                 <li onclick="yogaType('dar')">Dharma</li>
                 <li onclick="yogaType('art')">Artha</li>
                 <li onclick="yogaType('kam')">Kama</li>
                 <li onclick="yogaType('mok')">Moksha</li>
                 <li onclick="yogaType('aro')">Arogya</li>
+                <li onclick="yogaType('mor')">More</li>
             </ul>
         </div>
         <div class="tabcontent" data-aos="fade-right">
             <h2 class="yogaTypeDesc" data-key="tittle">Dharma</h2>
             <p class="yogaTypeDesc" data-key="description">
-                Soul purpose and career.
+                Is the true calling of a person, what they are born to do. It refers each person\'s individual expression
+                of his / her soul\'s purpose. When acted upon, it is a principle that will benefit not just your own
+                dharma but the larger or universal expression of it as well. What you were born to do.
             </p>
         </div>
     </main>
-    <section id="ourPlans" class = "navOpenBlur">
-        <h2>WORKPLACE WELLNESS</h2>
-        <div id = "weOffer">
-            <div id = "weOfferI" data-aos="zoom-out">
-                <div class="rectOffer">
-                    <i class="fa-solid fa-crown"></i> 
-                    <div>
-                        <span>Enhancing Leadership</span>
-                    </div>
-                </div>
-                <div class="rectOffer">
-                    <i class="fas fa-hands-helping"></i>
-                    <span>Team Building and Collaboration</span>
-                </div>
-                <div class="rectOffer">
-                    <i class="fas fa-heart"></i>
-                    <span>Stress Reduction and Well-being</span>
-                </div>
-            </div>
-            <img src="/img/utileria/Yoga-with-face-masks-bro_animated.svg" alt="" data-aos="zoom-in">
-            <div id = "weOfferD" data-aos="zoom-out">
-                <div class="rectOffer">
-                    <span>Aligning Purpose and Values</span>
-                    <i class="fas fa-compass"></i>
-                </div>
-                <div class="rectOffer">
-                    <span>Resolving Conflict</span>
-                    <i class="fas fa-handshake"></i>
-                </div>
-                <div class="rectOffer">
-                    <span>Enhancing Communication</span>
-                    <i class="fas fa-comments"></i>
-                </div>    
-            </div>
-        </div>
-    </section>
-    <section id="priceTargets" class = "navOpenBlur">
+    <section id="personalService" class="navOpenBlur">
         <h2>PERSONAL THERAPIES</h2>
         <div class="targetContainer"> <!--data-aos="zoom-in"-->
             <div class="target" data-aos="zoom-out-up">
                 <div class="containerTarget">
-                    <img src="/img/utileria/Yoga_animated.svg" alt="">
+                    <img src="/img/utileria/mindfulness-animate_animated.svg" alt="">
                     <i class="fa-solid fa-leaf"></i>
                 </div>
                 <h3>Spiritual Concerns</h3>
                 <p>
-                    Off your path, manifestation, mindfulness and meditation, wanting to feel more connected, finding inner peace, personal growth journey, exploring spirituality, soulful living, embracing change, aligning with your true self.
+                    Off your path, manifestation, mindfulness and meditation, wanting to feel more connected, finding
+                    inner peace, personal growth journey, exploring spirituality, soulful living, embracing change,
+                    aligning with your true self.
                 </p>
                 <button>Buy pass</button>
             </div>
             <div class="target" data-aos="zoom-out-down">
                 <div class="containerTarget">
-                    <img src="/img/utileria/Ayurveda_animated.svg" alt="">
+                    <img src="/img/utileria/Stretching-exercises-bro_animated.svg" alt="">
                     <i class="fa-solid fa-seedling"></i>
                 </div>
-                <h3>Ayurveda</h3>
+                <h3>Physical</h3>
                 <p>
-                    Ayurveda and diet, fatigue, pain, digestion, coping with disease, holistic health, natural remedies, emotional well-being, mind-body connection, energy balance, healing therapies, lifestyle changes.
+                    Ayurveda and diet, fatigue, pain, digestion, coping with disease, holistic health, natural remedies,
+                    emotional well-being, mind-body connection, energy balance, healing therapies, lifestyle changes.
                 </p>
                 <button>Buy pass</button>
             </div>
             <div class="target" data-aos="zoom-out-up">
                 <div class="containerTarget">
-                    <img src="/img/utileria/mentalHealth_animated.svg" alt="">
+                    <img src="/img/utileria/Peace-of-mind-bro_animated.svg" alt="">
                     <i class="fa-solid fa-leaf"></i>
                 </div>
                 <h3>Mental & Emotional</h3>
                 <p>
-                    Anxiety, depression, sleep disorders, stress management, anger 
-                    management, self care and self improvement, relationships and communication restless 
+                    Anxiety, depression, sleep disorders, stress management, anger
+                    management, self care and self improvement, relationships and communication restless
                     mind, addictions, compulsions, career, finances.
                 </p>
                 <button>Buy pass</button>
             </div>
         </div>
     </section>
-    <section id = "meetCoach"class="meetCoach navOpenBlur">
+    <div class="modal" id="myModal" onclick="closeModal()">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+            <i id = "iconModal"></i>
+            <h3 class = "modalChange" data-key = "tittle"></h3>
+            <p  class = "modalChange" data-key = "description"></p>
+        </div>
+    </div>
+    <section id="ayurvedaService" class="navOpenBlur infoPlans">
+        <div class="informativeService" data-aos="fade-right">
+            <h2>AYURVEDA</h2>
+            <p>Ayurveda, an integral part of Vedic wisdom, emerges as a profound and time-tested solution.
+                By embracing Ayurvedic principles, you can unlock the transformative potential of this ancient
+                system to enhance your physical, mental, and spiritual health.
+            </p>
+            <div class="informativeContainer">
+                <div class="rectOffer" onclick="openModal('PA','ayurvevaBullets')">
+                    <i class="fas fa-user"></i>
+                    <span>Personalized Approach</span>
+                </div>
+                <div class="rectOffer" onclick="openModal('HH','ayurvevaBullets')">
+                    <i class="fas fa-heart"></i>
+                    <span>Holistic Healing</span>
+                </div>
+            </div>
+            <div class="informativeContainer">
+                <div class="rectOffer" onclick="openModal('MC','ayurvevaBullets')">
+                    <i class="fas fa-brain"></i>
+                    <span>Mind-Body Connection</span>
+                </div>
+                <div class="rectOffer" onclick="openModal('NS','ayurvevaBullets')">
+                    <i class="fas fa-leaf"></i>
+                    <span>Natural and Sustainable</span>
+                </div>
+            </div>
+            <div class="rectOffer" onclick="openModal('PL','ayurvevaBullets')">
+                <i class="fas fa-shield-alt"></i>
+                <span>Prevention and Longevity</span>
+            </div>
+        </div>
+        <img src="/img/utileria/Floating-in-water-bro_animated.svg" alt="" data-aos="zoom-in-up">
+    </section>
+    <section id="companiesService" class="navOpenBlur infoPlans">
+        <img src="/img/utileria/Collaboration-bro_animated.svg" alt="" data-aos="zoom-in-up">
+        <div class="informativeService">
+            <h2>WORKPLACE WELLNESS</h2>
+            <p>In today's competitive business landscape, unlocking the full potential of your company and 
+                teams is essential for sustainable success. That's where the powerful combination of Vedic 
+                Counselling and Vedic Wisdom comes into play. By incorporating these transformative 
+                approaches into your wellness programs, you can enhance performance, foster well-being, and 
+                cultivate a harmonious work environment.
+            </p>
+            <button onclick="redireccionar('service.html#programs')">Wellness programs</button>
+        </div>
+    </section>
+    <section id = "programs"class="wellnessPrograms navOpenBlur">
+        <h2>WELLNESS PROGRAMS</h2>
+        <div id="weOffer">
+            <div id="weOfferI" data-aos="zoom-out">
+                <div class="rectOffer" onclick="openModal('EL','workplaceBullets')">
+                    <i class="fa-solid fa-crown"></i>
+                    <div>
+                        <span>Enhancing Leadership</span>
+                    </div>
+                </div>
+                <div class="rectOffer" onclick="openModal('TC','workplaceBullets')">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Team Building and Collaboration</span>
+                </div>
+                <div class="rectOffer" onclick="openModal('SW','workplaceBullets')">
+                    <i class="fas fa-heart"></i>
+                    <span>Stress Reduction and Well-being</span>
+                </div>
+            </div>
+            <img src="/img/utileria/Yoga-with-face-masks-bro_animated.svg" alt="" data-aos="zoom-in">
+            <div id="weOfferD" data-aos="zoom-out">
+                <div class="rectOffer" onclick="openModal('AV','workplaceBullets')">
+                    <span>Aligning Purpose and Values</span>
+                    <i class="fas fa-compass"></i>
+                </div>
+                <div class="rectOffer" onclick="openModal('RC','workplaceBullets')">
+                    <span>Resolving Conflict</span>
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="rectOffer" onclick="openModal('EC','workplaceBullets')">
+                    <span>Enhancing Communication</span>
+                    <i class="fas fa-comments"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="meetCoach" class="meetCoach navOpenBlur">
         <div class="left" data-aos="fade-up">
             <h2>MEET YOUR COUNSELLOR</h2>
             <p>
-                Hugo Ortiz: Certified Vedic Counsellor by Dr. David Frawley at the American Institute of Vedic 
-                Studies and teaching yoga since 2013. Passionate about the philosophy of yoga, its roots and 
+                Hugo Ortiz: Certified Vedic Counsellor by Dr. David Frawley at the American Institute of Vedic
+                Studies and teaching yoga since 2013. Passionate about the philosophy of yoga, its roots and
                 a great love of life; discovered the path of yoga 24 years ago.
             </p>
             <iframe style="border-radius:12px"
@@ -156,12 +216,15 @@
             <img src="/img/background/Hugo.webp" alt="" data-aos="flip-right">
         </div>
     </section>
-    <footer id="footer" class="change-color navOpenBlur" data-aos="zoom-in-up"></footer>
+    <footer id="footer" class="change-color navOpenBlur"></footer>
     <!-- Javascript -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/changeLanguage.js"></script>
     <script src="assets/js/yogaTypes.js"></script>
+    <script src="assets/js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         AOS.init(
             {
@@ -170,7 +233,12 @@
                 easing: 'ease-in-out'
             }
         );
-      </script>
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('l8O8uRdeuO0q_o_9D');
+        })();
+    </script>
 </body>
 
 </html>

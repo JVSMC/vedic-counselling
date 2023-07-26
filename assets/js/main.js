@@ -80,6 +80,7 @@ function redireccionarFuera(link) {
   window.open(link, "_blank");
 }
 
+//DownloadFiles
 function downloadFiles() {
   var enlace1 = document.createElement('a');
   enlace1.href = 'assets/files/DETERMINAR_PRAKRUTI.pdf';
@@ -94,4 +95,31 @@ function downloadFiles() {
   // document.body.appendChild(enlace2);
   // enlace2.click();
   // document.body.removeChild(enlace2);
+}
+
+//Form
+window.onload = function () {
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      // generate a five digit number for the contact_number variable
+      //this.contact_number.value = Math.random() * 100000 | 0;
+      // these IDs from the previous steps
+      emailjs.sendForm('service_bwoezf5', 'template_5nmtjla', this)
+          .then(function () {
+              console.log('SUCCESS!');
+              Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+              )
+          }, function (error) {
+              console.log('FAILED...', error);
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                // footer: '<a href="">Why do I have this issue?</a>'
+              })
+          });
+  });
 }

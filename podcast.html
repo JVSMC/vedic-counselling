@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,23 @@
     <!-- Primary Meta Tags -->
     <title>Vedic Counselling</title>
     <meta name="title" content="Vedic Counselling" />
-    <meta name="description" content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
+    <meta name="description"
+        content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vedic-counselling.netlify.app/" />
     <meta property="og:title" content="Vedic Counselling" />
-    <meta property="og:description" content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
+    <meta property="og:description"
+        content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
     <meta property="og:image" content="https://vedic-counselling.netlify.app/img/Logotipo_C.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://vedic-counselling.netlify.app/" />
     <meta property="twitter:title" content="Vedic Counselling" />
-    <meta property="twitter:description" content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
+    <meta property="twitter:description"
+        content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
     <meta property="twitter:image" content="https://vedic-counselling.netlify.app/img/Logotipo_C.png" />
 
     <!-- Imports -->
@@ -30,30 +34,37 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
+
 <body>
     <!-- Navbar -->
-    <nav id = "header" class="navbar"></nav>
-    <main id = "mainPodcast" class = "navOpenBlur">
-        <div class = "descriptionPodcast">
+    <nav id="header" class="navbar"></nav>
+    <section id="mainPodcast" class="navOpenBlur">
+        <div class="descriptionPodcast">
             <h2>Vedic Counseling <span>podcast</span></h2>
             <p>Discover the Timeless Wisdom of Vedic Tradition for Modern Mental Health.</p>
             <p>
-                In today's fast-paced and demanding world, maintaining optimal mental health is more crucial than ever. The pressures of daily life, the constant influx of information, and the challenges we face can leave us feeling overwhelmed, anxious, and disconnected from ourselves. That's where the ancient wisdom of Vedic tradition comes in.
+                In today's fast-paced and demanding world, maintaining optimal mental health is more crucial than ever.
+                The pressures of daily life, the constant influx of information, and the challenges we face can leave us
+                feeling overwhelmed, anxious, and disconnected from ourselves. That's where the ancient wisdom of Vedic
+                tradition comes in.
             </p>
-            <div class = "podcast">
-                <a href="https://open.spotify.com/show/5bTYBd2LjpRbB05otZ3t5a?si=d7b9b875fe884048" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            <div class="podcast">
+                <a href="https://open.spotify.com/show/5bTYBd2LjpRbB05otZ3t5a?si=d7b9b875fe884048" target="_blank"><i
+                        class="fa-brands fa-spotify"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-apple"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-amazon"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-google"></i></a>
             </div>
         </div>
         <img src="/img/utileria/meditation-animate_animated.svg" alt="">
-    </main>
-    <footer id = "footer" class="change-color navOpenBlur" data-aos="zoom-in-up"></footer>
+    </section>
+    <footer id="footer" class="change-color navOpenBlur" data-aos="zoom-in-up"></footer>
     <!-- Javascript -->
-    <script src = "assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/changeLanguage.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         AOS.init(
             {
@@ -61,6 +72,12 @@
                 offset: 120
             }
         );
-      </script>
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('l8O8uRdeuO0q_o_9D');
+        })();
+    </script>
 </body>
+
 </html>
