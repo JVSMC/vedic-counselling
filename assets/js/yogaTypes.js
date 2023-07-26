@@ -32,6 +32,6 @@ function yogaType(yogaT){
     elementsToChange.forEach(element => {
         let key = element.getAttribute('data-key');
         console.log(key);
-        element.textContent = ayurvevaBullets[yogaT][key];
+        element.textContent = yogaTypes[yogaT][key];
     });
 }
