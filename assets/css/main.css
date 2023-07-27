@@ -459,6 +459,7 @@ form button {
     flex-direction: column;
 }
 
+#mainDescription,
 #mainPodcast {
     background: var(--sprout);
     justify-content: flex-end;
@@ -500,6 +501,30 @@ form button {
     text-align: center;
 }
 
+#mainDescription img,
+#mainPodcast img {
+    height: 100%;
+}
+
+#mainDescription .descriptionVedic,
+#mainPodcast .descriptionPodcast {
+    margin: auto 3rem;
+    width: 50%;
+}
+
+.descriptionVedic h2,
+.descriptionPodcast h2 {
+    font-size: 4rem;
+}
+
+.descriptionVedic p,
+.descriptionPodcast p {
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    color: var(--blackText);
+    text-align: justify;
+}
+
 /*Service*/
 .tab {
     position: relative;
@@ -517,10 +542,10 @@ form button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(56, 56, 56, 0.14);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 0;
 }
 
@@ -540,11 +565,12 @@ form button {
     width: 80%;
     font-size: 1.1rem;
     text-align: center;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
+    line-height: 130%;
 }
 
 .tab ul {
-    margin: 4.37rem auto 0 auto;
+    margin: 2.37rem auto 0.7rem;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -552,13 +578,15 @@ form button {
 
 .tab ul li {
     font-size: 1.5625rem;
-    padding-bottom: 10px;
+    padding: 10px;
+    border: 3px solid var(--whiteText);
+    border-radius: 1rem;
     cursor: pointer;
 }
 
 .tab ul li:hover {
-    border-bottom: 2px solid var(--sprout);
-    text-shadow: 4px 4px 5px var(--battleShipGray);
+    border: 3px solid var(--sprout);
+    /* text-shadow: 4px 4px 5px var(--battleShipGray); */
 }
 
 .tabcontent {
@@ -682,14 +710,14 @@ form button {
 }
 
 /*PricetTargets*/
-#personalService {
+#personalPlans {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* position: relative; */
 }
 
-#personalService h2 {
+#personalPlans h2 {
     text-align: center;
     font-family: ZCOOL XiaoWei;
     margin: 2rem;
@@ -999,23 +1027,11 @@ form button {
 }
 
 /*--| Podcast |--*/
-#mainPodcast img {
-    height: 100%;
-}
 
-#mainPodcast .descriptionPodcast {
-    margin: auto 3rem;
-    width: 50%;
-}
-
-.descriptionPodcast h2 {
-    font-size: 4rem;
-}
-
-/* .descriptionPodcast span{
+.descriptionPodcast span{
     font-size: 3.2rem;
     color: var(--gumbo);
-} */
+}
 
 .descriptionPodcast p {
     margin: 1rem auto;
@@ -1174,11 +1190,11 @@ form button {
         text-align: left;
     }
 
-    #personalService {
+    #personalPlans {
         height: auto;
     }
 
-    #personalService h2 {
+    #personalPlans h2 {
         margin: 4rem 1rem 2rem 1rem;
         text-align: center;
     }

@@ -20,10 +20,6 @@ const yogaTypes = {
         tittle: 'Arogya',
         description: 'Arogya is a Sanskrit word that means "overall well-being" and "health of mind, body and spirit." Generally speaking, it means living a healthy life without disease and having complete health in mind and body. Arogya can be used to refer to a wide range of topics, including yoga asana, Ayurveda, meditation, pranayama, japa mantra and much more.'
     },
-    mor: {
-        tittle: 'Approach',
-        description: 'Vedic counseling is based upon an understanding of dharma, or our individual nature, and karma or our patterns of action, and how we can achieve all the main goals of life, including right relationship, right vocation and the fulfillment of all our duties and responsibilities to the whole of life. Such foundational Vedic knowledge is necessary for any Vedic or yogic applications.'
-    }
 };
 
 function yogaType(yogaT){
