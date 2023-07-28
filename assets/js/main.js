@@ -81,21 +81,16 @@ function redireccionarFuera(link) {
 }
 
 //DownloadFiles
-function downloadFiles() {
-  var enlace1 = document.createElement('a');
-  enlace1.href = 'assets/files/DETERMINAR_PRAKRUTI.pdf';
-  enlace1.download = 'DETERMINAR_PRAKRUTI.pdf';
-  document.body.appendChild(enlace1);
-  enlace1.click();
-  document.body.removeChild(enlace1);
+// function downloadFiles() {
+//   var enlace1 = document.createElement('a');
+//   enlace1.href = 'assets/files/DETERMINAR_PRAKRUTI.pdf';
+//   enlace1.download = 'DETERMINAR_PRAKRUTI.pdf';
+//   document.body.appendChild(enlace1);
+//   enlace1.click();
+//   document.body.removeChild(enlace1);
 
-  // var enlace2 = document.createElement('a');
-  // enlace2.href = 'ruta/al/tu/segundo/archivo.pdf';
-  // enlace2.download = 'archivo2.pdf';
-  // document.body.appendChild(enlace2);
-  // enlace2.click();
-  // document.body.removeChild(enlace2);
-}
+
+// }
 
 //Form
 window.onload = function () {
