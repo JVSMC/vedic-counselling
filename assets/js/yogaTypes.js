@@ -6,7 +6,7 @@ const yogaTypes = {
     },
     art: {
         tittle: 'Artha',
-        description: 'Refers to means and resources that I need to play my role in the world. Where do I place value? Do I have enough? Are my things making me happy, or are they stealing my joy? Am I afraid of having more? Am I afraid of not having more? What does wealth mean to me besides money?goals, values, means and resources and prosperity in general to fulfill your dharma'
+        description: 'Refers to means and resources that I need to play my role in the world. Where do I place value? Do I have enough? Are my things making me happy, or are they stealing my joy? Am I afraid of having more? Am I afraid of not having more? What does wealth mean to me besides money?goals, values, means and resources and prosperity in general to fulfill your dharma.'
     },
     kam: {
         tittle: 'Kama',
