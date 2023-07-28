@@ -1245,9 +1245,9 @@ form button {
         margin: 3rem;
     }
 
-    #ayurvedaService .informativeService .rectOffer{
+    /* #ayurvedaService .informativeService .rectOffer{
         width: 100%;
-    }
+    } */
 
     .informativeService {
         width: 80%;
@@ -1289,7 +1289,7 @@ form button {
 
     #weOffer #weOfferI,
     #weOffer #weOfferD {
-        width: 100%;
+        width: 80%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -1306,7 +1306,7 @@ form button {
     }
 
     .rectOffer {
-        width: 80%;
+        width: 100%;
         margin-top: 1.5rem;
     }
 
@@ -1539,9 +1539,9 @@ form button {
         height: auto;
     }
 
-    .tab p {
-        /* display: none; */
-    }
+    /* .tab p {
+        display: none;
+    } */
 
     .tab ul {
         margin: 1.5rem auto 0 auto;
