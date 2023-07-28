@@ -37,6 +37,11 @@
 <body>
     <!-- Navbar -->
     <nav id="header" class="navbar"></nav>
+    <div id="float-button" class = "tooltip" data-title="Reach us 🌟🧘‍♂️🌿">
+        <a href="https://wa.link/6e900n" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
     <main id="mainService" class="navOpenBlur">
         <div class="tab">
             <h2>OUR APPROACH</h2>
@@ -80,10 +85,11 @@
                 make difficulties simpler to manage, fortify strengths, open a sense of allowance for divine unfoldment
                 and discover the happiness we have been seeking.
             </p>
+            <button onclick="redireccionar('service.html#personalPlans')">Our scope</button>
         </div>
     </section>
     <section id="personalPlans" class="navOpenBlur">
-        <h2>PERSONAL PLANS</h2>
+        <h2>OUR SCOPE</h2>
         <div class="targetContainer"> <!--data-aos="zoom-in"-->
             <div class="target" data-aos="zoom-out-up">
                 <div class="containerTarget">
@@ -96,7 +102,7 @@
                     inner peace, personal growth journey, exploring spirituality, soulful living, embracing change,
                     aligning with your true self.
                 </p>
-                <button>Buy pass</button>
+                <button onclick="redireccionar('https://wa.link/imzoam')">Schedule</button>
             </div>
             <div class="target" data-aos="zoom-out-down">
                 <div class="containerTarget">
@@ -108,7 +114,10 @@
                     Ayurveda and diet, fatigue, pain, digestion, coping with disease, holistic health, natural remedies,
                     emotional well-being, mind-body connection, energy balance, healing therapies, lifestyle changes.
                 </p>
-                <button>Buy pass</button>
+                <div class = "doubleButton">
+                    <button onclick="redireccionar('https://wa.link/7c7tgz')">Schedule</button>
+                    <button onclick="redireccionar('service.html#ayurvedaService')" class = "primaryBtn">Ayurveda</button>
+                </div>
             </div>
             <div class="target" data-aos="zoom-out-up">
                 <div class="containerTarget">
@@ -121,7 +130,7 @@
                     management, self care and self improvement, relationships and communication restless
                     mind, addictions, compulsions, career, finances.
                 </p>
-                <button>Buy pass</button>
+                <button onclick="redireccionar('https://wa.link/a5f5ek')">Schedule</button>
             </div>
         </div>
     </section>
@@ -177,7 +186,10 @@
                 approaches into your wellness programs, you can enhance performance, foster well-being, and
                 cultivate a harmonious work environment.
             </p>
-            <button onclick="redireccionar('service.html#programs')">Wellness programs</button>
+            <div class = "doubleButton">
+                <button onclick="redireccionar('https://wa.link/7c7tgz')">Schedule</button>
+                <button onclick="redireccionar('service.html#programs')" class = "primaryBtn">Wellness programs</button>
+            </div>
         </div>
     </section>
     <section id="programs" class="wellnessPrograms navOpenBlur">
@@ -199,7 +211,7 @@
                     <span>Stress Reduction and Well-being</span>
                 </div>
             </div>
-            <img src="/img/utileria/Yoga-with-face-masks-bro_animated.svg" alt="" data-aos="zoom-in">
+            <img src="/img/utileria/Team-goals-bro_animated.svg" alt="" data-aos="zoom-in">
             <div id="weOfferD" data-aos="zoom-out">
                 <div class="rectOffer" onclick="openModal('AV','workplaceBullets')">
                     <span>Aligning Purpose and Values</span>
@@ -225,8 +237,8 @@
                 a great love of life; discovered the path of yoga 24 years ago.
             </p>
             <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/episode/3GZfgrmbHOT4Al9cYiQTnr?utm_source=generator&theme=0"
-                width="100%" height="85" frameBorder="0"
+                src="https://open.spotify.com/embed/episode/3x74CCu9T7idAtxY2I8EGj?utm_source=generator&theme=0"
+                width="100%" height="100" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
             </iframe>
             <img src="/img/utileria/LogoParaAnimar_animated.svg" alt="">
