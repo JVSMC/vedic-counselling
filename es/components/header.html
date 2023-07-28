@@ -1,0 +1,47 @@
+<body>
+  <img class="logo" src="/img/Logo_Nombre_animated.svg" alt="vedic-counselling" onclick="redireccionar('index.html')">
+  <div class="navText">
+    <div id="secondPart" class="sidenav2">
+      <a href="index.html" class="lang" data-key="navHome">Inicio</a>
+      <!-- <a href="service.html" class="lang" data-key="navService">Services</a> -->
+      <div class="dropdown">
+        <div class = "containerdropbtn">
+          <button class="dropbtn lang" data-key="navService" onclick="redireccionar('service.html')">
+            Enfoque
+          </button>
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="dropdown-content">
+          <a href="service.html#personalService" class="lang" data-key="navServiceOp1">Personal</a>
+          <a href="service.html#companiesService" class="lang" data-key="navServiceOp2">Empresas</a>
+        </div>
+      </div>
+      <div id="firstPart" class="sidenav">
+        <i id="closeBtn" class="fa-solid fa-xmark" onclick="openNav()"></i>
+        <a href="#footer" class="lang" data-key="navContact">Contacto</a>
+        <div class="dropdown">
+          <div class = "containerdropbtn">
+            <button class="dropbtn lang" data-key="navMedia">
+              Medios
+            </button>
+            <i class="fa fa-caret-down"></i>
+          </div>
+          <div class="dropdown-content">
+            <a href="blog.html" class="lang" data-key="navMediaOp1">Blog</a>
+            <a href="podcast.html" class="lang" data-key="navMediaOp2">Pódcast</a>
+            <a class="lang" data-key="navMediaOp3" onclick="redireccionarFuera('https://forms.gle/LcHriaumkM2umwCy7')" style="cursor: pointer;">Dosha</a>
+          </div>
+        </div>
+        <div class="toggleSwitch">
+          <p>Eng</p>
+          <label class="switch">
+            <input type="checkbox" id="chboxLan" onchange="changeLanguage()" checked>
+            <span class="slider round"></span>
+          </label>
+          <p>Esp</p>
+        </div>
+      </div>
+    </div>
+    <i id="sandwichMenu" class="fa-solid fa-bars" onclick="openNav()"></i>
+  </div>
+</body>

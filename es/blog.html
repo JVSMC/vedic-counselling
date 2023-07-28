@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,56 +31,70 @@
     <link rel="stylesheet" href="../assets/css/main.css?v=1.7" />
     <script src="https://kit.fontawesome.com/e0604ff0b7.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
+
 <body>
     <!-- Navbar -->
     <nav id="header" class="navbar"></nav>
-    <div id="float-button" class = "tooltip" data-title="Reach us 🌟🧘‍♂️🌿">
+    <div id="float-button" class = "tooltip" data-title="Contactanos 🌟🧘‍♂️🌿">
         <a href="https://wa.link/6e900n" target="_blank">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
-    <section id="mainPodcast" class="navOpenBlur">
-        <div class="descriptionPodcast" data-aos="fade-right">
-            <h2>Vedic Counselling <span>podcast</span></h2>
-            <p>Discover the Timeless Wisdom of Vedic Tradition for Modern Mental Health.</p>
-            <p>
-                In today's fast-paced and demanding world, maintaining optimal mental health is more crucial than ever.
-                The pressures of daily life, the constant influx of information, and the challenges we face can leave us
-                feeling overwhelmed, anxious, and disconnected from ourselves. That's where the ancient wisdom of Vedic
-                tradition comes in.
-            </p>
-            <div class="podcast">
-                <a href="https://open.spotify.com/show/5bTYBd2LjpRbB05otZ3t5a?si=d7b9b875fe884048" target="_blank"><i
-                        class="fa-brands fa-spotify"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-apple"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-amazon"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-google"></i></a>
+    <main id ="mainBlog"class="navOpenBlur">
+        <section class="layout">
+            <div class="relevantPost" data-aos="flip-up">
+                <p class = "keywords">Palabras clave</p>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore a sapiente ullam, iste non corporis!</p>
+                <button>Read</button>
             </div>
-        </div>
-        <img src="img/utileria/music-animate_animated.svg" alt="" data-aos="zoom-in-up">
-    </section>
-    <footer id="footer" class="change-color navOpenBlur"></footer>
+            <div class="secondPost" data-aos="flip-right">
+                <p class = "keywords">Palabras clave</p>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore a sapiente ullam, iste non corporis!</p>
+                <button>Read</button>
+            </div>
+            <div class="thirdPost" data-aos="flip-right">
+                <p class = "keywords">Palabras clave</p>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore a sapiente ullam, iste non corporis!</p>
+                <button>Read</button>
+            </div>
+            <div class="fourthPost" data-aos="flip-left">
+                <p class = "keywords">Palabras clave</p>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore a sapiente ullam, iste non corporis!</p>
+                <button>Read</button>
+            </div>
+            <div class="fifthPost" data-aos="flip-left">
+                <p class = "keywords">Palabras clave</p>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore a sapiente ullam, iste non corporis!</p>
+                <button>Read</button>
+            </div>
+            <div class="sixthPost" data-aos="flip-up">
+                <p class = "keywords">Palabras clave</p>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore a sapiente ullam, iste non corporis!</p>
+                <button>Read</button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="change-color navOpenBlur" data-aos="zoom-in-up"></footer>
     <!-- Javascript -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/changeLanguage.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         AOS.init(
             {
                 duration: 1000,
-                offset: 120
+                offset: 120,
+                easing: 'ease-in-out'
             }
         );
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init('l8O8uRdeuO0q_o_9D');
-        })();
-    </script>
+      </script>
 </body>
 
 </html>

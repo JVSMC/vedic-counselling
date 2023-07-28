@@ -23,21 +23,31 @@ const language = {
 };
 
 
-function changeLanguage() {
+// function changeLanguage() {
+//     let checkbox = document.getElementById("chboxLan");
+//     let elements = document.querySelectorAll('.lang');
+
+//     if (checkbox.checked) { //Spanish checkbox.checked
+//         elements.forEach(element => {
+//             let key = element.getAttribute('data-key');
+//             element.textContent = language['es'][key]
+//         });
+
+//     } else {
+//         elements.forEach(element => {
+//             let key = element.getAttribute('data-key');
+//             element.textContent = language['en'][key]
+//         });
+//     }
+// }
+
+function changeLanguage(){
     let checkbox = document.getElementById("chboxLan");
-    let elements = document.querySelectorAll('.lang');
-
-    if (checkbox.checked) { //Spanish checkbox.checked
-        elements.forEach(element => {
-            let key = element.getAttribute('data-key');
-            element.textContent = language['es'][key]
-        });
-
-    } else {
-        elements.forEach(element => {
-            let key = element.getAttribute('data-key');
-            element.textContent = language['en'][key]
-        });
+    if (checkbox.checked == true){
+        console.log('Hey');
+        window.location.href = 'es/index.html';
+    }else {
+        console.log('NoHey')
+        window.location.href = '../index.html';
     }
 }
-
