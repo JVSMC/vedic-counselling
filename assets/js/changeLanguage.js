@@ -41,13 +41,26 @@ const language = {
 //     }
 // }
 
+
 function changeLanguage(){
     let checkbox = document.getElementById("chboxLan");
+    let actuallink = window.location.href;
+    let endPartUrl = actuallink.split('/'); // return an array
+    let newUrl = '';
     if (checkbox.checked == true){
-        console.log('Hey');
-        window.location.href = 'es/index.html';
+        //console.log('--| Hey |--');
+        endPartUrl[endPartUrl.length -1] = 'es/' + endPartUrl[endPartUrl.length -1];
+        newUrl =  endPartUrl.join('/');
+        //console.log(endPartUrl);
+        //console.log(newUrl);
+        window.location.href = newUrl;
     }else {
-        console.log('NoHey')
-        window.location.href = '../index.html';
+        //console.log('--| NoHey |--')
+        let x = endPartUrl.indexOf('es');
+        endPartUrl.splice(x,1);
+        //console.log(endPartUrl);
+        newUrl =  endPartUrl.join('/');
+        //console.log(newUrl);
+        window.location.href = newUrl;
     }
 }

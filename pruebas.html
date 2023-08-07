@@ -1,14 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Tarjetas y Modal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- META TAGS -->
+    <meta name="author" content="JavssMarC" />
+    <!-- Primary Meta Tags -->
+    <title>Vedic Counselling</title>
+    <meta name="title" content="Vedic Counselling" />
+    <meta name="description"
+        content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vedic-counselling.netlify.app/" />
+    <meta property="og:title" content="Vedic Counselling" />
+    <meta property="og:description"
+        content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
+    <meta property="og:image" content="https://vedic-counselling.netlify.app/img/Logotipo_C.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vedic-counselling.netlify.app/" />
+    <meta property="twitter:title" content="Vedic Counselling" />
+    <meta property="twitter:description"
+        content="Vedic counseling is a dharmic guidance on right living, right action, right relationship, and right awareness. Its basis is self-understanding and bringing us to a direct perception of the truth, not imposing a belief system, formula, or set of preconceptions upon anyone." />
+    <meta property="twitter:image" content="https://vedic-counselling.netlify.app/img/Logotipo_C.png" />
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="assets/css/main.css?v=1.7" />
+    <script src="https://kit.fontawesome.com/e0604ff0b7.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
-<style>
-  iframe {
-    width: 100%;
-  }
-</style>
+
 <body>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9TvTWIbpgKtMVzb9MEy6HcdMZpw4J7giqv-cucRkLGJC4UA/viewform?embedded=true" width="640" height="17285" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    <!-- Navbar -->
+    <nav id="header" class="navbar"></nav>
+    <div id="float-button" class = "tooltip" data-title="Reach us 🌟🧘‍♂️🌿">
+        <a href="https://wa.link/6e900n" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <main id="test" class="navOpenBlur">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9TvTWIbpgKtMVzb9MEy6HcdMZpw4J7giqv-cucRkLGJC4UA/viewform?embedded=true" width="700" height="520" frameborder="10" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </main>
+    <footer id="footer" class="change-color navOpenBlur"></footer>
+    <!-- Javascript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/changeLanguage.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1000,
+                offset: 120
+            }
+        );
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('l8O8uRdeuO0q_o_9D');
+        })();
+    </script>
 </body>
 </html>

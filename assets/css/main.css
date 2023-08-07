@@ -1125,8 +1125,13 @@ form button {
     justify-content: space-between;
 }
 
-/* General mediaqueries */
+/* --| Test |-- */
+#test {
+    justify-content: center;
+    background-color: var(--gumbo);
+}
 
+/* General mediaqueries */
 @media (max-width: 960px) {
 
     /* --| Navbar |-- */
