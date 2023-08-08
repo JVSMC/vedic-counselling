@@ -59,6 +59,33 @@ const workplaceBullets = {
     },
 };
 
+const blogTopics = {
+    EA: {
+        tittle: 'Equilibrio y Armonía',
+        description: 'En el mundo agitado en el que vivimos, es fácil sentirnos abrumados y desequilibrados. La consejería védica nos enseña a buscar el equilibrio y la armonía en todos los aspectos de nuestra vida. A través de prácticas como la meditación y el yoga, aprendemos a encontrar la calma interior y a afrontar los desafíos con una mente clara y serena.'
+    },
+    GE: {
+        tittle: 'Gestión del Estrés y Ansiedad',
+        description: 'El estrés y la ansiedad son problemas comunes en la sociedad actual. La consejería védica ofrece herramientas y técnicas para manejar eficazmente estas emociones negativas. A través de la meditación y prácticas de respiración, podemos reducir el estrés y aumentar nuestra capacidad para enfrentar los desafíos de manera tranquila y centrada.'
+    },
+    MS: {
+        tittle: 'Mejora en la Salud Integral',
+        description: 'La consejería védica abarca un enfoque holístico para la salud, que incluye el cuidado del cuerpo, la mente y el espíritu. El uso de la medicina ayurvédica, combinada con el yoga y la meditación, promueve la salud en todos los niveles y nos ayuda a alcanzar un estado óptimo de bienestar.'
+    },
+    CU: {
+        tittle: 'Conexión con el Universo',
+        description: 'La filosofía védica nos enseña que estamos conectados con el universo y todos los seres vivos. La consejería védica nos ayuda a desarrollar una mayor empatía y compasión hacia nosotros mismos y los demás. Esta conexión nos permite construir relaciones más significativas y satisfactorias en nuestra vida personal y profesional.'
+    },
+    LC: {
+        tittle: 'Liberación y Crecimiento Espiritual',
+        description: 'El objetivo último de la consejería védica es alcanzar el moksha, o liberación espiritual. A través de la exploración de nuestras acciones (karma) y la comprensión de nuestra verdadera naturaleza, podemos alcanzar un crecimiento espiritual significativo. Este proceso nos permite soltar cargas emocionales y encontrar una mayor ligereza en nuestro camino.'
+    },
+    AP: {
+        tittle: 'Autoconciencia y Propósito',
+        description: 'Uno de los pilares fundamentales de la consejería védica es la comprensión del dharma, o propósito de vida individual. Al explorar nuestras pasiones y talentos innatos, podemos descubrir nuestro verdadero propósito y alinear nuestras acciones con él. Esta autoconciencia nos brinda una mayor satisfacción y sentido de realización en nuestra vida cotidiana.'
+    }
+}
+
 function ayurveda(typeService, data) {
     let elementsToChange = document.querySelectorAll('.modalChange');
     let iconToChange = document.getElementById('iconModal');
@@ -79,8 +106,25 @@ function ayurveda(typeService, data) {
             let key = element.getAttribute('data-key');
             element.textContent = workplaceBullets[typeService][key];
         });
+    }else if (data == 'blogData'){
+        elementsToChange.forEach(element => {
+            let key = element.getAttribute('data-key');
+            //console.log(key);
+            //console.log(ayurvevaBullets[ayurvedaType][key]);
+            element.textContent = blogTopics[typeService][key];
+        });
     }
 }
+
+// function blogTopicsModal (topic, dataBase) {
+//     let elementsToChange = document.querySelectorAll('.modalChange');
+//     elementsToChange.forEach(element => {
+//         let key = element.getAttribute('data-key');
+//         //console.log(key);
+//         //console.log(ayurvevaBullets[ayurvedaType][key]);
+//         element.textContent = blogTopics[topic][key];
+//     });
+// }
 
 //Open Modal
 function openModal(topic, dataBase) {

@@ -42,6 +42,14 @@
         </a>
     </div>
     <main id ="mainBlog"class="navOpenBlur">
+        <div class="modal" id="myModal" onclick="closeModal()">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+                <i id="iconModal"></i>
+                <h3 class="modalChange" data-key="tittle"></h3>
+                <p class="modalChange" data-key="description"></p>
+            </div>
+        </div>
         <section class="layout">
             <div class="relevantPost" data-aos="flip-up">
                 <p class = "keywords">Palabras clave</p>
@@ -53,7 +61,7 @@
                     meditación y el yoga, aprendemos a encontrar la calma interior y a afrontar los 
                     desafíos con una mente clara y serena.
                 </p>
-                <button>Leer</button>
+                <button onclick="openModal('EA', 'blogData')">Leer</button>
             </div>
             <div class="secondPost" data-aos="flip-right">
                 <p class = "keywords">Palabras clave</p>
@@ -65,7 +73,7 @@
                     podemos reducir el estrés y aumentar nuestra capacidad para enfrentar los 
                     desafíos de manera tranquila y centrada.
                 </p>
-                <button>Leer</button>
+                <button onclick="openModal('GE', 'blogData')">Leer</button>
             </div>
             <div class="thirdPost" data-aos="flip-right">
                 <p class = "keywords">Palabras clave</p>
@@ -75,7 +83,7 @@
                     combinada con el yoga y la meditación, promueve la salud en todos los niveles y 
                     nos ayuda a alcanzar un estado óptimo de bienestar.
                 </p>
-                <button>Leer</button>
+                <button onclick="openModal('MS', 'blogData')">Leer</button>
             </div>
             <div class="fourthPost" data-aos="flip-left">
                 <p class = "keywords">Palabras clave</p>
@@ -87,7 +95,7 @@
                     construir relaciones más significativas y satisfactorias en nuestra vida personal y 
                     profesional.
                 </p>
-                <button>Leer</button>
+                <button onclick="openModal('CU', 'blogData')">Leer</button>
             </div>
             <div class="fifthPost" data-aos="flip-left">
                 <p class = "keywords">Palabras clave</p>
@@ -99,7 +107,7 @@
                     espiritual significativo. Este proceso nos permite soltar cargas emocionales y 
                     encontrar una mayor ligereza en nuestro camino.
                 </p>
-                <button>Leer</button>
+                <button onclick="openModal('LC', 'blogData')">Leer</button>
             </div>
             <div class="sixthPost" data-aos="flip-up">
                 <p class = "keywords">Palabras clave</p>
@@ -110,7 +118,7 @@
                     acciones con él. Esta autoconciencia nos brinda una mayor satisfacción y sentido 
                     de realización en nuestra vida cotidiana.
                 </p>
-                <button>Leer</button>
+                <button onclick="openModal('AP', 'blogData')">Leer</button>
             </div>
         </section>
     </main>
@@ -118,6 +126,7 @@
     <!-- Javascript -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/changeLanguage.js"></script>
+    <script src="assets/js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init(
