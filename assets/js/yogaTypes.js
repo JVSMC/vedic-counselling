@@ -14,11 +14,11 @@ const yogaTypes = {
     },
     mok: {
         tittle: 'Moksha',
-        description: 'Moksha or liberation, is widely considered to be the pinnacle of the purusharthas. The whole game is that you want to be free; you want freedom from and freedom to. Freedom from suffering and from that which is blocking you from realizing your own power and connection to life. And you want freedom to express your own creativity as fully as possible, freedom to live fully and be happy.'
+        description: 'Moksha, or liberation, is widely regarded as the pinnacle of aggregate life. The whole game is that you want to be free; you want freedom from and freedom to. Freedom from suffering and from that which is blocking you from realizing your own power and connection to life. And you want freedom to express your own creativity as fully as possible, freedom to live fully and be happy.'
     },
     aro: {
         tittle: 'Arogya',
-        description: 'Arogya is a Sanskrit word that means "overall well-being" and "health of mind, body and spirit." Generally speaking, it means living a healthy life without disease and having complete health in mind and body. Arogya can be used to refer to a wide range of topics, including yoga asana, Ayurveda, meditation, pranayama, japa mantra and much more.'
+        description: 'Arogya is a Sanskrit word meaning "general well-being" and "mental, bodily and spiritual health". In general terms, it means living a healthy life without disease and having complete health in mind and body. Arogya can be used to refer to a wide range of subjects, including ayurveda, yoga asana, meditation, pranayama, japa mantra, tantra, vastu and much more.'
     },
 };
 

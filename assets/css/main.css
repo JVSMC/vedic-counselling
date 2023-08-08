@@ -382,6 +382,7 @@ nav a:hover,
     background-color: var(--grayNurse);
     -webkit-transition: .4s;
     transition: .4s;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .changeColorSw .slider {
@@ -412,9 +413,9 @@ input:checked+.slider {
     background-color: var(--gumbo);
 }
 
-input:focus+.slider {
+/* input:focus+.slider {
     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
-}
+} */
 
 input:checked+.slider::before {
     -webkit-transform: translateX(15px);
@@ -804,7 +805,7 @@ form button {
 
 .target {
     /* width: 30%;*/
-    height: fit-content;
+    /* height: fit-content; */
     width: 24.63956rem;
     /* height: 29.8125rem; */
     margin: 0 1.67rem;
@@ -820,6 +821,7 @@ form button {
 .target p {
     color: var(--blackText);
     margin: 1rem;
+    text-align: justify;
 }
 
 .target h3 {
@@ -1073,11 +1075,23 @@ form button {
     font-size: .7rem;
 }
 
+.layout h2{
+    font-size: 1.5rem;
+}
+
+.layout p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Número de líneas que deseas mostrar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .layout button {
-    position: absolute;
-    bottom: 1rem;
+    /* position: absolute; */
+    /* bottom: 1rem; */
     /* border: 2px solid var(--grayNurse); */
     box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    margin: 1.3rem 0 auto 0;
 }
 
 .relevantPost {
@@ -1166,6 +1180,11 @@ form button {
     }
 
     .seeSidenav {
+        width: 250px;
+    }
+
+    #firstPart .dropdown-content {
+        position: static;
         width: 250px;
     }
 
@@ -1390,6 +1409,14 @@ form button {
         gap: 8px;
     }
 
+    .layout h2 {
+        font-size: 1.2rem;
+    }
+
+    .layout p{
+        -webkit-line-clamp: 3; /* Número de líneas que deseas mostrar */
+    }
+
     /*--|Podcast|--*/
     #mainPodcast,
     #mainDescription {
@@ -1470,12 +1497,11 @@ form button {
         align-items: baseline;
     }
 
-    .dropdown-content {
-        position: static;
-        min-width: 180px;
+    .seeSidenav {
+        width: 180px;
     }
 
-    .seeSidenav {
+    .dropdown-content {
         width: 180px;
     }
 

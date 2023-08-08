@@ -14,11 +14,11 @@ const yogaTypes = {
     },
     mok: {
         tittle: 'Moksha',
-        description: 'Moksha o liberación, es ampliamente considerado como el pináculo de los purusharthas. Todo el juego es que quieres ser libre; quieres libertad de y libertad para. Libertad del sufrimiento y de aquello que te impide darte cuenta de tu propio poder y conexión con la vida. Y quieres libertad para expresar tu propia creatividad lo más plenamente posible, libertad para vivir plenamente y ser feliz.'
+        description: 'Moksha o liberación, es ampliamente considerado como el pináculo de la vida. Todo el juego es que quieres ser libre; quieres libertad de y libertad para. Libertad del sufrimiento y de aquello que te impide darte cuenta de tu propio poder y conexión con la vida. Y quieres libertad para expresar tu propia creatividad lo más plenamente posible, libertad para vivir plenamente y ser feliz.'
     },
     aro: {
         tittle: 'Arogya',
-        description: 'Arogya es una palabra sánscrita que significa "bienestar general" y "salud mental, corporal y espiritual". En términos generales, significa vivir una vida saludable sin enfermedades y tener una salud completa en mente y cuerpo. Arogya se puede utilizar para referirse a una amplia gama de temas, incluidos yoga asana, ayurveda, meditación, pranayama, japa mantra y mucho más.'
+        description: 'Arogya es una palabra sánscrita que significa "bienestar general" y "salud mental, corporal y espiritual". En términos generales, significa vivir una vida saludable sin enfermedades y tener una salud completa en mente y cuerpo. Arogya se puede utilizar para referirse a una amplia gama de temas, incluidos ayurveda, yoga asana, meditación, pranayama, japa mantra, tantra, vastu y mucho más.'
     },
 };
 
