@@ -109,8 +109,6 @@ function ayurveda(typeService, data) {
     }else if (data == 'blogData'){
         elementsToChange.forEach(element => {
             let key = element.getAttribute('data-key');
-            //console.log(key);
-            //console.log(ayurvevaBullets[ayurvedaType][key]);
             element.textContent = blogTopics[typeService][key];
         });
     }
