@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- Versión en Español -->
+   <url>
+      <loc>https://www.vedic-counselling.com/es/index</loc>
+   </url>
+   <url>
+      <loc>https://www.vedic-counselling.com/es/service</loc>
+   </url>
+   <url>
+      <loc>https://www.vedic-counselling.com/es/blog</loc>
+   </url>
+   <url>
+      <loc>https://www.vedic-counselling.com/es/podcast</loc>
+   </url>
+
+   <!-- Versión en Inglés -->
+   <url>
+      <loc>https://www.vedic-counselling.com/index</loc>
+   </url>
+   <url>
+      <loc>https://www.vedic-counselling.com/service</loc>
+   </url>
+   <url>
+      <loc>https://www.vedic-counselling.com/blog</loc>
+   </url>
+   <url>
+      <loc>https://www.vedic-counselling.com/podcast</loc>
+   </url>
+
+</urlset>
