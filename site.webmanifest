@@ -1,0 +1,19 @@
+{
+    "name": "Vedic Counselling",
+    "short_name": "Vedic Counselling",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#c0d1a9",
+    "background_color": "#c0d1a9",
+    "display": "standalone"
+}
