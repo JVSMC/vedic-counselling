@@ -9,18 +9,6 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://vedic-counselling.com/" />
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/background/balance-110850_1920.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, bienestar humano, consejería védica</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/meditation-animate_animated.svg</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, bienestar humano, consejería védica, meditation</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/background/ian-stauffer-uftqFbfWGFY-unsplash.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, bienestar humano, consejería védica</image:keywords>
-      </image:image>
    </url>
 
    <url>
@@ -28,75 +16,20 @@
       <xhtml:link rel="alternate" hreflang="es" href="https://www.ejemplo.com/es/service.html" />
       <xhtml:link rel="alternate" hreflang="en" href="https://vedic-counselling.com/service.html" />
       <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/background/luca-bravo-O453M2Liufs-unsplash.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, Dharma, Artha, Kama, Moksa, Arogya</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/prioritise-animate_animated.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/prioritise-animate_animated.svg</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/mindfulness-animate_animated.svg</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales, mindfulness, cuidado mental</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/Stretching-exercises-bro_animated.svg</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales, physical therapies, terapias físicas</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/Peace-of-mind-bro_animated.svg</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales, Mental, Emotional, mental y emocional</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/Floating-in-water-bro_animated.svg</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales, Ayurveda</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/Collaboration-bro_animated.svg</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales, collaboration, WORKPLACE WELLNESS, colaboración, bienestar en el trabajo</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/utileria/Team-goals-bro_animated.svg</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales, wellnes programs, programas de bienestar</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/background/Hugo.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, personal therapies, terapias personales, counsellor, consejero</image:keywords>
-      </image:image>
+      <priority>0.8</priority>
    </url>
 
    <url>
-      <loc>https://www.ejemplo.com/blog.html</loc>
-      <xhtml:link rel="alternate" hreflang="es" href="https://www.ejemplo.com/es/blog.html" />
+      <loc>https://www.vedic-counselling.com/blog.html</loc>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.vedic-counselling.com/es/blog.html" />
       <xhtml:link rel="alternate" hreflang="en" href="https://vedic-counselling.com/blog.html" />
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/background/balance-110850_1920.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, bienestar humano, consejería védica</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/background/ian-stauffer-uftqFbfWGFY-unsplash.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, bienestar humano, consejería védica</image:keywords>
-      </image:image>
    </url>
 
    <url>
-      <loc>https://www.ejemplo.com/podcast.html</loc>
-      <xhtml:link rel="alternate" hreflang="es" href="https://www.ejemplo.com/es/podcast.html" />
+      <loc>https://www.vedic-counselling.com/podcast.html</loc>
+      <xhtml:link rel="alternate" hreflang="es" href="https://www.vedic-counselling.com/es/podcast.html" />
       <xhtml:link rel="alternate" hreflang="en" href="https://vedic-counselling.com/podcast.html" />
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/background/balance-110850_1920.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, bienestar humano, consejería védica</image:keywords>
-      </image:image>
-      <image:image>
-         <image:loc>https://vedic-counselling.com/img/background/ian-stauffer-uftqFbfWGFY-unsplash.webp</image:loc>
-         <image:keywords>vedic, counselling, Hugo Ortiz, Guadalajara, bienestar humano, consejería védica</image:keywords>
-      </image:image>
+      <priority>0.6</priority>
    </url>
 
 </urlset>
