@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- Versión en Español -->
    <url>
-      <loc>https://vedic-counselling.com/</loc>
-      <xhtml:link rel="alternate" hreflang="es" href="https://vedic-counselling.com/es/" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://vedic-counselling.com/" />
-      <changefreq>weekly</changefreq>
+      <loc>https://vedic-counselling.com/es/index</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://vedic-counselling.com/es/service</loc>
+   </url>
+   <url>
+      <loc>https://vedic-counselling.com/es/blog</loc>
+   </url>
+   <url>
+      <loc>https://vedic-counselling.com/es/podcast</loc>
+   </url>
+
+   <!-- Versión en Inglés -->
+   <url>
+      <loc>https://vedic-counselling.com/index</loc>
+      <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
-
    <url>
-      <loc>https://vedic-counselling.com/service.html</loc>
-      <xhtml:link rel="alternate" hreflang="es" href="https://www.ejemplo.com/es/service.html" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://vedic-counselling.com/service.html" />
-      <changefreq>weekly</changefreq>
+      <loc>https://vedic-counselling.com/service</loc>
+      <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
-
    <url>
-      <loc>https://www.vedic-counselling.com/blog.html</loc>
-      <xhtml:link rel="alternate" hreflang="es" href="https://www.vedic-counselling.com/es/blog.html" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://vedic-counselling.com/blog.html" />
-   </url>
-
-   <url>
-      <loc>https://www.vedic-counselling.com/podcast.html</loc>
-      <xhtml:link rel="alternate" hreflang="es" href="https://www.vedic-counselling.com/es/podcast.html" />
-      <xhtml:link rel="alternate" hreflang="en" href="https://vedic-counselling.com/podcast.html" />
+      <loc>https://vedic-counselling.com/blog</loc>
+      <changefreq>weekly</changefreq>
       <priority>0.6</priority>
+   </url>
+   <url>
+      <loc>https://vedic-counselling.com/podcast</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
    </url>
 
 </urlset>
-
