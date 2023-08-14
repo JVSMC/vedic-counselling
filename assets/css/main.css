@@ -56,7 +56,7 @@ section {
 h1 {
     font-size: 2.1875rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
 }
 
@@ -557,7 +557,7 @@ form button {
 .mainText ul li {
     margin-left: 2rem;
     font-size: 1.2rem;
-    font-style: normal;
+    font-style: italic;
     font-weight: 600;
 }
 
@@ -597,7 +597,7 @@ form button {
 
 .descriptionVedic h2,
 .descriptionPodcast h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .descriptionVedic p,
@@ -1500,6 +1500,10 @@ form button {
 
     .seeSidenav {
         width: 180px;
+    }
+
+    #secondPart .dropdown-content{
+        position: static;
     }
 
     .dropdown-content {
