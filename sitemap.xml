@@ -3,18 +3,18 @@
 
    <!-- Versión en Español -->
    <url>
-      <loc>https://vedic-counselling.com/es/index</loc>
+      <loc>https://vedic-counselling.com/es/index.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>https://vedic-counselling.com/es/service</loc>
+      <loc>https://vedic-counselling.com/es/service.html</loc>
    </url>
    <url>
-      <loc>https://vedic-counselling.com/es/blog</loc>
+      <loc>https://vedic-counselling.com/es/blog.html</loc>
    </url>
    <url>
-      <loc>https://vedic-counselling.com/es/podcast</loc>
+      <loc>https://vedic-counselling.com/es/podcast.html</loc>
    </url>
 
    <!-- Versión en Inglés -->
@@ -24,17 +24,17 @@
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://vedic-counselling.com/service</loc>
+      <loc>https://vedic-counselling.com/service.html</loc>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://vedic-counselling.com/blog</loc>
+      <loc>https://vedic-counselling.com/blog.html</loc>
       <changefreq>weekly</changefreq>
       <priority>0.6</priority>
    </url>
    <url>
-      <loc>https://vedic-counselling.com/podcast</loc>
+      <loc>https://vedic-counselling.com/podcast.html</loc>
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
    </url>
