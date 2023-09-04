@@ -540,7 +540,7 @@ form button {
 #mainDescription,
 #mainPodcast {
     background: var(--sprout);
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
 /*Index*/
@@ -584,11 +584,10 @@ form button {
     width: 100%;
     text-align: center;
 }
-
-#mainDescription img,
-#mainPodcast img {
-    height: 100%;
+#mainDescription img{
+    height: 70%;
 }
+
 
 #mainDescription .descriptionVedic,
 #mainPodcast .descriptionPodcast {
@@ -1122,6 +1121,10 @@ form button {
 
 /*--| Podcast |--*/
 
+#mainPodcast img {
+    height: 100%;
+}
+
 .descriptionPodcast span {
     font-size: 3.2rem;
     color: var(--gumbo);
@@ -1148,6 +1151,11 @@ form button {
 }
 
 /* General mediaqueries */
+@media (max-width:1440px){
+    #mainPodcast img {
+        height: 70%;
+    }
+}
 @media (max-width: 960px) {
 
     /* --| Navbar |-- */
@@ -1197,7 +1205,8 @@ form button {
 
     footer .formImg {
         width: 100%;
-        height: 30vh;
+        height: auto;
+        padding-top: 1.5rem;
         flex-direction: column-reverse;
         justify-content: space-around;
     }
@@ -1227,11 +1236,13 @@ form button {
     /* --| Sections |-- */
     #main {
         /* background-position: 85% 50%; */
+        height: auto;
+        padding-top: 100px;
+        flex-direction: column;
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(245, 245, 245, 0.00) 100%), url(/img/background/balance-110850_1920_16_9.webp);
         background-size: cover;
         background-position: center;
     }
-
     #main::before {
         content: "";
         position: absolute;
@@ -1244,6 +1255,12 @@ form button {
         -webkit-backdrop-filter: blur(7px);
         z-index: 0;
     }
+    .mainSocial{
+        position: static;
+        z-index: 1;
+        margin: 2rem;
+    }
+
     .tab {
         padding-top: 5.5rem;
     }
@@ -1433,6 +1450,22 @@ form button {
     }
 }
 
+@media (orientation: portrait) and (max-width: 960px){
+    #main {
+        height: 100vh;
+        padding-top: 0px;
+        justify-content:space-around;
+    }
+    .mainSocial {
+        position: absolute;
+        /* z-index: 1; */
+        margin: 2rem;
+    }
+    footer .formImg {
+        height: 30vh;
+    }
+}
+
 @media (max-width: 480px) {
     nav {
         padding-top: 1.5rem;
@@ -1513,6 +1546,7 @@ form button {
 
     /*--| Sections |--*/
     #main {
+        padding-top: 0;
         background-position: 65%;
         height: auto;
         flex-direction: column;
