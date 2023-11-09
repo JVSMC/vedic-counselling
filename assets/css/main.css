@@ -807,14 +807,15 @@ form button {
 .target {
     /* width: 30%;*/
     /* height: fit-content; */
-    width: 24.63956rem;
+    /* width: 24.63956rem; */
     /* height: 29.8125rem; */
     margin: 0 1.67rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 50% 50% 0% 0%;
+    /* border-radius: 50% 50% 0% 0%; */
+    border-radius: 15rem 15rem 0 0;
     border: 2px solid var(--lobloly);
 }
 
@@ -1387,6 +1388,7 @@ form button {
 
     .target {
         margin: 1.67rem auto;
+        width: 24.63956rem;
     }
 
     .meetCoach {
@@ -1635,6 +1637,7 @@ form button {
     .target {
         width: 80%;
         border-radius: 2rem;
+        padding: 1.5rem 0;
     }
 
     .target .containerTarget {
