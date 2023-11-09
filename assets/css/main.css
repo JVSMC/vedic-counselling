@@ -807,7 +807,7 @@ form button {
 .target {
     /* width: 30%;*/
     /* height: fit-content; */
-    /* width: 24.63956rem; */
+    width: 24.63956rem;
     /* height: 29.8125rem; */
     margin: 0 1.67rem;
     display: flex;
@@ -1157,6 +1157,11 @@ form button {
         height: 70%;
     }
 }
+@media (max-width:1280px){
+    .target{
+        width: auto;
+    }
+}
 @media (max-width: 960px) {
 
     /* --| Navbar |-- */
@@ -1466,6 +1471,10 @@ form button {
     footer .formImg {
         height: 30vh;
     }
+
+    .target{
+        padding: 1.5rem 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1637,7 +1646,6 @@ form button {
     .target {
         width: 80%;
         border-radius: 2rem;
-        padding: 1.5rem 0;
     }
 
     .target .containerTarget {
